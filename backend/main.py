@@ -38,14 +38,15 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# --- Router registrations (uncomment as agents are built) ---
-# from routers import jobs, candidates, parsing, matching, taxonomy, traces
-# app.include_router(jobs.router)
-# app.include_router(candidates.router)
-# app.include_router(parsing.router)
-# app.include_router(matching.router)
-# app.include_router(taxonomy.router)
-# app.include_router(traces.router)
+# --- Router registrations ---
+from routers import parse, candidates, match, skills, jobs, webhooks
+
+app.include_router(parse.router)
+app.include_router(candidates.router)
+app.include_router(match.router)
+app.include_router(skills.router)
+app.include_router(jobs.router)
+app.include_router(webhooks.router)
 
 # Mount uploads directory for static file serving
 uploads_dir = os.path.join(os.path.dirname(__file__), "..", "uploads")
