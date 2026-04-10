@@ -10,6 +10,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
 from database import Base, engine
+import models  # noqa: F401 — registers all tables with Base.metadata
 
 
 @asynccontextmanager
