@@ -39,9 +39,11 @@ class JobPost(AsyncAttrs, Base):
 
     id = Column(String, primary_key=True, default=lambda: str(uuid4()))
     title = Column(String, nullable=False)
+    raw_jd = Column(Text, nullable=True)  # Raw job description text
     status = Column(String, nullable=False, default="active")  # active | paused | closed
     green_threshold = Column(Float, nullable=False, default=80.0)
     yellow_threshold = Column(Float, nullable=False, default=60.0)
+    jd_chat_history_json = Column(Text, nullable=True)  # JSON array of chat messages
     created_at = Column(DateTime, nullable=False, default=_utcnow)
     updated_at = Column(DateTime, nullable=False, default=_utcnow, onupdate=_utcnow)
 

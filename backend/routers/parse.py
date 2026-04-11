@@ -1,14 +1,15 @@
 """Parse router — resume parsing endpoints."""
 
+import json
 import os
-import shutil
 from uuid import uuid4
 
-from fastapi import APIRouter, Depends, HTTPException, UploadFile
+from fastapi import APIRouter, BackgroundTasks, Depends, HTTPException, UploadFile
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select, func
 from database import get_db
-from models import Resume, JobPost
+from models import Resume, JobPost, ResumeParsedData, Ranking, CandidateAnalysis
+from agents.orchestrator import Orchestrator
 
 router = APIRouter(prefix="/api/v1/parse", tags=["Parse"])
 
@@ -17,6 +18,8 @@ os.makedirs(UPLOAD_DIR, exist_ok=True)
 
 ALLOWED_EXTENSIONS = {".pdf", ".docx", ".doc", ".txt"}
 MAX_FILE_SIZE = 10 * 1024 * 1024  # 10 MB
+
+orchestrator = Orchestrator()
 
 
 def _get_format(filename: str) -> str | None:
@@ -35,6 +38,7 @@ def _get_format(filename: str) -> str | None:
 async def parse_single_resume(
     file: UploadFile,
     job_post_id: str | None = None,
+    background_tasks: BackgroundTasks = BackgroundTasks(),
     db: AsyncSession = Depends(get_db),
 ):
     fmt = _get_format(file.filename or "")
@@ -52,9 +56,18 @@ async def parse_single_resume(
     with open(file_path, "wb") as f:
         f.write(contents)
 
+    job_id = job_post_id or "unassigned"
+
+    # Ensure JobPost exists
+    job_post = await db.get(JobPost, job_id)
+    if not job_post:
+        job_post = JobPost(id=job_id, title=f"Job {job_id}")
+        db.add(job_post)
+        await db.flush()
+
     resume = Resume(
         id=file_id,
-        job_post_id=job_post_id or "unassigned",
+        job_post_id=job_id,
         filename=file.filename or "unknown",
         file_path=file_path,
         file_format=fmt,
@@ -62,6 +75,9 @@ async def parse_single_resume(
     )
     db.add(resume)
     await db.flush()
+
+    # Launch pipeline as background task
+    background_tasks.add_task(orchestrator.run_pipeline, file_id, job_id)
 
     return {
         "id": file_id,
@@ -77,6 +93,7 @@ async def parse_batch(
     files: list[UploadFile],
     job_post_id: str | None = None,
     webhook_url: str | None = None,
+    background_tasks: BackgroundTasks = BackgroundTasks(),
     db: AsyncSession = Depends(get_db),
 ):
     if not files:
@@ -131,6 +148,9 @@ async def parse_batch(
         )
         db.add(resume)
 
+        # Launch pipeline as background task for each resume
+        background_tasks.add_task(orchestrator.run_pipeline, file_id, job_id)
+
         results.append({
             "name": file.filename,
             "size": len(contents),
@@ -144,6 +164,7 @@ async def parse_batch(
 
 @router.get("/{job_id}/status")
 async def get_batch_status(job_id: str, db: AsyncSession = Depends(get_db)):
+    """Return real status counts for all resumes belonging to job_id."""
     # Count totals
     total_query = select(func.count()).select_from(Resume).where(Resume.job_post_id == job_id)
     total_res = await db.execute(total_query)
@@ -152,41 +173,118 @@ async def get_batch_status(job_id: str, db: AsyncSession = Depends(get_db)):
     if total == 0:
         return {"status": "pending", "total": 0, "completed": 0, "failed": 0, "queued": 0}
 
-    # Count completed
-    completed_query = select(func.count()).select_from(Resume).where(Resume.job_post_id == job_id, Resume.status == "done")
-    completed_res = await db.execute(completed_query)
-    completed = completed_res.scalar() or 0
+    # Count by status
+    status_counts = {}
+    for status_val in ["queued", "parsing", "taxonomy", "scoring", "done", "failed"]:
+        q = select(func.count()).select_from(Resume).where(
+            Resume.job_post_id == job_id, Resume.status == status_val
+        )
+        r = await db.execute(q)
+        status_counts[status_val] = r.scalar() or 0
 
-    # Count failed
-    failed_query = select(func.count()).select_from(Resume).where(Resume.job_post_id == job_id, Resume.status == "failed")
-    failed_res = await db.execute(failed_query)
-    failed = failed_res.scalar() or 0
+    completed = status_counts["done"]
+    failed = status_counts["failed"]
+    queued = status_counts["queued"]
+    processing = status_counts["parsing"] + status_counts["taxonomy"] + status_counts["scoring"]
 
-    # Count queued
-    queued_query = select(func.count()).select_from(Resume).where(Resume.job_post_id == job_id, Resume.status == "queued")
-    queued_res = await db.execute(queued_query)
-    queued = queued_res.scalar() or 0
-
-    # For hackathon/demo: auto-progress queued items to 'done' slowly
-    if queued > 0:
-        next_to_process_query = select(Resume).where(Resume.job_post_id == job_id, Resume.status == "queued").limit(1)
-        next_to_process_res = await db.execute(next_to_process_query)
-        next_to_process = next_to_process_res.scalar()
-        if next_to_process:
-            next_to_process.status = "done"
-            db.add(next_to_process)
-
-    status = "complete" if completed + failed == total else "processing"
+    if completed + failed == total:
+        overall_status = "complete"
+    elif processing > 0 or queued < total:
+        overall_status = "processing"
+    else:
+        overall_status = "pending"
 
     return {
-        "status": status,
+        "status": overall_status,
         "total": total,
         "completed": completed,
         "failed": failed,
-        "queued": max(0, queued - (1 if queued > 0 else 0)),
+        "queued": queued,
+        "processing": processing,
     }
 
 
 @router.get("/{job_id}/results")
-async def get_batch_results(job_id: str):
-    raise HTTPException(status_code=501, detail="Not implemented yet")
+async def get_batch_results(job_id: str, db: AsyncSession = Depends(get_db)):
+    """Return parsed + ranked candidates for all resumes belonging to job_id."""
+    # Query resumes with parsed data and rankings
+    query = (
+        select(Resume, ResumeParsedData, Ranking, CandidateAnalysis)
+        .outerjoin(ResumeParsedData, Resume.id == ResumeParsedData.resume_id)
+        .outerjoin(Ranking, Resume.id == Ranking.resume_id)
+        .outerjoin(CandidateAnalysis, Resume.id == CandidateAnalysis.resume_id)
+        .where(Resume.job_post_id == job_id)
+    )
+    result = await db.execute(query)
+    rows = result.all()
+
+    if not rows:
+        return {"candidates": [], "total": 0}
+
+    candidates = []
+    for resume, parsed, ranking, analysis in rows:
+        candidate = {
+            "resume_id": resume.id,
+            "filename": resume.filename,
+            "status": resume.status,
+            "name": parsed.candidate_name if parsed else None,
+            "email": None,
+            "total_score": ranking.total_score if ranking else None,
+            "tier": ranking.tier if ranking else None,
+            "dimension_scores": None,
+            "skills": [],
+            "red_flags": [],
+            "pros": [],
+            "cons": [],
+            "summary": None,
+        }
+
+        if parsed:
+            # Extract email from contact_json
+            if parsed.contact_json:
+                try:
+                    contact = json.loads(parsed.contact_json)
+                    candidate["email"] = contact.get("email")
+                except (json.JSONDecodeError, TypeError):
+                    pass
+
+            # Extract skills
+            if parsed.skills_json:
+                try:
+                    candidate["skills"] = json.loads(parsed.skills_json)
+                except (json.JSONDecodeError, TypeError):
+                    pass
+
+            # Extract red flags
+            if parsed.red_flags_json:
+                try:
+                    candidate["red_flags"] = json.loads(parsed.red_flags_json)
+                except (json.JSONDecodeError, TypeError):
+                    pass
+
+        if ranking:
+            if ranking.dimension_scores_json:
+                try:
+                    candidate["dimension_scores"] = json.loads(ranking.dimension_scores_json)
+                except (json.JSONDecodeError, TypeError):
+                    pass
+
+        if analysis:
+            if analysis.pros_json:
+                try:
+                    candidate["pros"] = json.loads(analysis.pros_json)
+                except (json.JSONDecodeError, TypeError):
+                    pass
+            if analysis.cons_json:
+                try:
+                    candidate["cons"] = json.loads(analysis.cons_json)
+                except (json.JSONDecodeError, TypeError):
+                    pass
+            candidate["summary"] = analysis.summary_sentence
+
+        candidates.append(candidate)
+
+    # Sort by score descending
+    candidates.sort(key=lambda c: c["total_score"] or 0, reverse=True)
+
+    return {"candidates": candidates, "total": len(candidates)}

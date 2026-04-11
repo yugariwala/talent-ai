@@ -1,1 +1,3 @@
-# agents package — Agent implementations will be added here
+# agents package — Agent implementations
+from agents.parser import ParserAgent
+from agents.taxonomy_agent import SkillTaxonomyAgent

@@ -35,6 +35,7 @@ interface StatusResponse {
   completed: number;
   failed: number;
   queued: number;
+  processing?: number;
 }
 
 interface RankingCandidate {
@@ -188,6 +189,11 @@ export function ProcessingView({ jobId, onComplete }: ProcessingViewProps) {
         setTotal(data.total);
         setCompleted(data.completed);
         setFailed(data.failed);
+
+        // Log processing count
+        if (data.processing && data.processing > 0) {
+          // Active processing is happening
+        }
 
         // Diff-based feed entries
         if (data.completed > prevCompleted) {

@@ -2,6 +2,9 @@
 Multi-Agent Talent AI — FastAPI Entry Point
 """
 
+from dotenv import load_dotenv
+load_dotenv()  # Load .env before any other imports that read env vars
+
 import os
 from contextlib import asynccontextmanager
 
