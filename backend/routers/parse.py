@@ -1,35 +1,14 @@
 """Parse router — resume parsing endpoints."""
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-from fastapi import APIRouter, HTTPException, UploadFile
-
-router = APIRouter(prefix="/api/v1/parse", tags=["Parse"])
-
-NOT_IMPLEMENTED = HTTPException(status_code=501, detail="Not implemented yet")
-
-
-@router.post("/")
-async def parse_single_resume(file: UploadFile, job_post_id: str | None = None):
-    raise NOT_IMPLEMENTED
-=======
->>>>>>> 3538df473c5108fc9f69ebaa1603d30eb8e2ea93
 import os
 import shutil
 from uuid import uuid4
 
 from fastapi import APIRouter, Depends, HTTPException, UploadFile
 from sqlalchemy.ext.asyncio import AsyncSession
-
-<<<<<<< HEAD
 from sqlalchemy import select, func
 from database import get_db
 from models import Resume, JobPost
-=======
-from database import get_db
-from models import Resume
->>>>>>> 3538df473c5108fc9f69ebaa1603d30eb8e2ea93
 
 router = APIRouter(prefix="/api/v1/parse", tags=["Parse"])
 
@@ -91,10 +70,6 @@ async def parse_single_resume(
         "format": fmt,
         "status": "queued",
     }
-<<<<<<< HEAD
-=======
->>>>>>> NISHIL
->>>>>>> 3538df473c5108fc9f69ebaa1603d30eb8e2ea93
 
 
 @router.post("/batch")
@@ -102,19 +77,11 @@ async def parse_batch(
     files: list[UploadFile],
     job_post_id: str | None = None,
     webhook_url: str | None = None,
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-):
-    raise NOT_IMPLEMENTED
-=======
->>>>>>> 3538df473c5108fc9f69ebaa1603d30eb8e2ea93
     db: AsyncSession = Depends(get_db),
 ):
     if not files:
         raise HTTPException(status_code=400, detail="No files provided")
 
-<<<<<<< HEAD
     # Ensure JobPost exists (auto-create for dev convenience)
     job_id = job_post_id or "unassigned"
     job_post = await db.get(JobPost, job_id)
@@ -123,8 +90,6 @@ async def parse_batch(
         db.add(job_post)
         await db.flush()
 
-=======
->>>>>>> 3538df473c5108fc9f69ebaa1603d30eb8e2ea93
     results = []
     for file in files:
         fmt = _get_format(file.filename or "")
@@ -158,7 +123,7 @@ async def parse_batch(
 
         resume = Resume(
             id=file_id,
-            job_post_id=job_post_id or "unassigned",
+            job_post_id=job_id,
             filename=file.filename or "unknown",
             file_path=file_path,
             file_format=fmt,
@@ -175,7 +140,6 @@ async def parse_batch(
 
     await db.flush()
     return results
-<<<<<<< HEAD
 
 
 @router.get("/{job_id}/status")
@@ -188,7 +152,7 @@ async def get_batch_status(job_id: str, db: AsyncSession = Depends(get_db)):
     if total == 0:
         return {"status": "pending", "total": 0, "completed": 0, "failed": 0, "queued": 0}
 
-    # Count completed (those that are fully done)
+    # Count completed
     completed_query = select(func.count()).select_from(Resume).where(Resume.job_post_id == job_id, Resume.status == "done")
     completed_res = await db.execute(completed_query)
     completed = completed_res.scalar() or 0
@@ -205,14 +169,12 @@ async def get_batch_status(job_id: str, db: AsyncSession = Depends(get_db)):
 
     # For hackathon/demo: auto-progress queued items to 'done' slowly
     if queued > 0:
-        # Just update one at a time for the demo feel
         next_to_process_query = select(Resume).where(Resume.job_post_id == job_id, Resume.status == "queued").limit(1)
         next_to_process_res = await db.execute(next_to_process_query)
         next_to_process = next_to_process_res.scalar()
         if next_to_process:
             next_to_process.status = "done"
             db.add(next_to_process)
-            # No await db.commit() here because get_db does it
 
     status = "complete" if completed + failed == total else "processing"
 
@@ -221,30 +183,10 @@ async def get_batch_status(job_id: str, db: AsyncSession = Depends(get_db)):
         "total": total,
         "completed": completed,
         "failed": failed,
-        "queued": max(0, queued - (1 if queued > 0 else 0)), # Adjusting for the one we just processed above to match immediate state
+        "queued": max(0, queued - (1 if queued > 0 else 0)),
     }
-=======
->>>>>>> NISHIL
-
-
-@router.get("/{job_id}/status")
-async def get_batch_status(job_id: str):
-<<<<<<< HEAD
-    raise NOT_IMPLEMENTED
-=======
-    raise HTTPException(status_code=501, detail="Not implemented yet")
->>>>>>> NISHIL
->>>>>>> 3538df473c5108fc9f69ebaa1603d30eb8e2ea93
 
 
 @router.get("/{job_id}/results")
 async def get_batch_results(job_id: str):
-<<<<<<< HEAD
     raise HTTPException(status_code=501, detail="Not implemented yet")
-=======
-<<<<<<< HEAD
-    raise NOT_IMPLEMENTED
-=======
-    raise HTTPException(status_code=501, detail="Not implemented yet")
->>>>>>> NISHIL
->>>>>>> 3538df473c5108fc9f69ebaa1603d30eb8e2ea93

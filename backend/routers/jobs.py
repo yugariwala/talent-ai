@@ -1,16 +1,12 @@
-<<<<<<< HEAD
+"""Jobs router — job post management endpoints."""
+
 from fastapi import APIRouter, HTTPException, Depends
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select
 from database import get_db
 from models import Ranking, JobPost, Resume
 import random
-=======
-"""Jobs router — job post management endpoints."""
 
-from fastapi import APIRouter, HTTPException
-
->>>>>>> 6f21b3786fe5b50300171476c4a75a6e6958ba71
 from schemas import CriteriaCardUpdate, JobPostCreate, TierBoundaryUpdate
 
 router = APIRouter(prefix="/api/v1/jobs", tags=["Jobs"])
@@ -39,7 +35,6 @@ async def update_criteria_card(job_id: str, body: CriteriaCardUpdate):
 
 
 @router.patch("/{job_id}/thresholds")
-<<<<<<< HEAD
 async def update_tier_thresholds(job_id: str, body: TierBoundaryUpdate, db: AsyncSession = Depends(get_db)):
     job = await db.get(JobPost, job_id)
     if not job:
@@ -59,15 +54,12 @@ async def get_rankings(job_id: str, db: AsyncSession = Depends(get_db)):
 
     # If no rankings exist, let's create some dummy ones for the demo histogram
     if not rankings:
-        # We need some resumes first
         res_query = select(Resume).where(Resume.job_post_id == job_id)
         res_res = await db.execute(res_query)
         resumes = res_res.scalars().all()
 
         if not resumes:
-            # Create some shadow resumes if needed?
-            # Actually, the user should upload them.
-            # But let's just return a generated list of scores for the chart if we want to "wow" them
+            # Return generated list of scores for the chart
             return [
                 {"candidate_id": f"c-{i}", "name": f"Candidate {i}", "score": random.randint(10, 95)}
                 for i in range(25)
@@ -94,15 +86,6 @@ async def get_rankings(job_id: str, db: AsyncSession = Depends(get_db)):
         {"candidate_id": r.resume_id, "score": r.total_score}
         for r in rankings
     ]
-=======
-async def update_tier_thresholds(job_id: str, body: TierBoundaryUpdate):
-    raise NOT_IMPLEMENTED
-
-
-@router.get("/{job_id}/rankings")
-async def get_rankings(job_id: str):
-    raise NOT_IMPLEMENTED
->>>>>>> 6f21b3786fe5b50300171476c4a75a6e6958ba71
 
 
 @router.get("/{job_id}/traces")
