@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FileUploadZone, type QueuedFile } from './components/FileUploadZone';
+<<<<<<< HEAD
 import { ProcessingView } from './components/ProcessingView';
 import {
   LayoutDashboard, Users, FileText, Settings,
@@ -7,11 +8,20 @@ import {
 } from 'lucide-react';
 
 type View = 'upload' | 'processing';
+=======
+import {
+  LayoutDashboard, Users, FileText, Settings,
+  Briefcase, Plus, ChevronRight, Zap
+} from 'lucide-react';
+>>>>>>> 3538df473c5108fc9f69ebaa1603d30eb8e2ea93
 
 function App() {
   const [jobId] = useState('job-123');
   const [processedFiles, setProcessedFiles] = useState<QueuedFile[]>([]);
+<<<<<<< HEAD
   const [view, setView] = useState<View>('upload');
+=======
+>>>>>>> 3538df473c5108fc9f69ebaa1603d30eb8e2ea93
 
   const handleFilesQueued = (files: QueuedFile[]) => {
     setProcessedFiles(prev => [...prev, ...files]);
@@ -70,6 +80,7 @@ function App() {
         <header className="h-16 flex items-center justify-between px-8 border-b border-white/[0.07]"
           style={{ background: 'rgba(0,0,0,0.6)', backdropFilter: 'blur(20px)' }}>
           <div>
+<<<<<<< HEAD
             <h1 className="text-lg font-bold tracking-tight leading-none">
               {view === 'upload' ? 'Resume Upload' : 'Processing Pipeline'}
             </h1>
@@ -77,6 +88,13 @@ function App() {
           </div>
 
           <div className="flex items-center gap-3">
+=======
+            <h1 className="text-lg font-bold tracking-tight leading-none">Resume Processing</h1>
+            <p className="text-xs text-[#a1a1a1] mt-0.5">Intelligent parsing &amp; matching system</p>
+          </div>
+
+          <div className="flex items-center gap-4">
+>>>>>>> 3538df473c5108fc9f69ebaa1603d30eb8e2ea93
             {/* Avatar stack */}
             <div className="flex -space-x-2">
               {['N','D','A'].map((l, i) => (
@@ -91,6 +109,7 @@ function App() {
               </div>
             </div>
 
+<<<<<<< HEAD
             {/* View toggle tabs */}
             <div className="flex items-center gap-1 rounded-full border border-white/10 p-1" style={{ background: 'rgba(255,255,255,0.04)' }}>
               <button
@@ -114,11 +133,23 @@ function App() {
             <button className="flex items-center gap-1 bg-white/5 border border-white/10 text-white text-xs font-semibold rounded-full px-4 py-2 hover:bg-white/10 transition-all duration-200">
               <ChevronRight size={12} />
               New Batch
+=======
+            {/* Primary Pill CTA — micro1 style */}
+            <button
+              className="flex items-center gap-2 bg-white text-black text-sm font-semibold rounded-full px-5 py-2 hover:scale-[1.03] transition-transform duration-200"
+            >
+              <Plus size={14} />
+              New Batch
+              <span className="bg-black text-white rounded-full p-0.5 ml-1">
+                <ChevronRight size={10} />
+              </span>
+>>>>>>> 3538df473c5108fc9f69ebaa1603d30eb8e2ea93
             </button>
           </div>
         </header>
 
         {/* Content */}
+<<<<<<< HEAD
         <section className="flex-1 overflow-y-auto">
           {view === 'upload' ? (
             <div className="p-8">
@@ -178,6 +209,58 @@ function App() {
               onComplete={() => alert('✅ Results phase — wire up your ResultsView here!')}
             />
           )}
+=======
+        <section className="flex-1 overflow-y-auto p-8">
+          <div className="max-w-3xl mx-auto space-y-8">
+
+            {/* Upload card */}
+            <div className="rounded-2xl p-px glow-cyan"
+              style={{ background: 'rgba(255,255,255,0.06)' }}>
+              <div className="rounded-2xl p-6"
+                style={{ background: 'rgba(0,0,0,0.85)', backdropFilter: 'blur(16px)' }}>
+                <div className="flex items-start justify-between mb-6">
+                  <div>
+                    <h2 className="text-base font-bold tracking-tight">Upload Resume Pipeline</h2>
+                    <p className="text-xs text-[#a1a1a1] mt-1">
+                      Add candidates to the current active job cycle
+                    </p>
+                  </div>
+                  <span className="text-[10px] font-mono px-3 py-1 rounded-full border border-white/10 text-[#a1a1a1]"
+                    style={{ background: 'rgba(0,210,255,0.06)' }}>
+                    ID: {jobId}
+                  </span>
+                </div>
+                <FileUploadZone jobId={jobId} onFilesQueued={handleFilesQueued} />
+              </div>
+            </div>
+
+            {/* Queue History */}
+            {processedFiles.length > 0 && (
+              <div className="space-y-3">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.12em] text-[#a1a1a1] px-1">
+                  Processing Queue
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  {processedFiles.map((file, idx) => (
+                    <div key={idx}
+                      className="glass rounded-xl px-4 py-3 flex items-center justify-between hover:border-white/20 transition-colors">
+                      <div className="flex items-center gap-3 overflow-hidden">
+                        <div className={`w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 text-xs font-bold uppercase
+                          ${file.format === 'pdf' ? 'bg-red-500/10 text-red-400' :
+                            file.format === 'docx' ? 'bg-cyan-500/10 text-cyan-400' :
+                            'bg-white/6 text-[#a1a1a1]'}`}>
+                          {file.format}
+                        </div>
+                        <p className="text-sm font-medium truncate">{file.name}</p>
+                      </div>
+                      <StatusBadge status={file.status} />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+>>>>>>> 3538df473c5108fc9f69ebaa1603d30eb8e2ea93
         </section>
       </main>
     </div>
