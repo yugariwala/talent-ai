@@ -6,6 +6,7 @@ import { Input } from "./ui/input";
 import { ScrollArea } from "./ui/scroll-area";
 import { Badge } from "./ui/badge";
 import { Send, Bot, User, Briefcase, CheckCircle2, Sparkles, Loader2 } from "lucide-react";
+import { CriteriaCardPanel } from "./CriteriaCardPanel";
 
 export type CriteriaCard = {
   role_name?: string;
@@ -38,8 +39,25 @@ export function IntakeView({ jobId, onComplete }: IntakeViewProps) {
   const [questionNumber, setQuestionNumber] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
   const [phase, setPhase] = useState<"jd_input" | "qa" | "complete" | "processing">("jd_input");
+  const [generatedCriteria, setGeneratedCriteria] = useState<any>(null);
 
   const scrollRef = useRef<HTMLDivElement>(null);
+
+  const handleUpdateCriteria = async (updated: any) => {
+    if (!generatedCriteria) return;
+    const newCriteria = { ...generatedCriteria, ...updated };
+    setGeneratedCriteria(newCriteria);
+    
+    try {
+      await apiFetch(`/api/v1/jobs/${jobId}/criteria`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(newCriteria),
+      });
+    } catch (err) {
+      console.error("Failed to patch criteria:", err);
+    }
+  };
 
   // Auto-scroll to bottom when messages change
   useEffect(() => {
@@ -83,6 +101,7 @@ export function IntakeView({ jobId, onComplete }: IntakeViewProps) {
         setQuestionNumber(response.question_number);
         if (phase === "jd_input") setPhase("qa");
       } else if (response.type === "criteria_card") {
+        setGeneratedCriteria(response.criteria_card);
         setMessages((prev) => [
           ...prev,
           { type: "assistant", text: "Based on what you've told me, here's the evaluation criteria I've generated:" },
@@ -127,8 +146,19 @@ export function IntakeView({ jobId, onComplete }: IntakeViewProps) {
   };
 
   return (
-    <Card className="flex flex-col h-full max-h-[800px] w-full max-w-2xl mx-auto shadow-[0_0_50px_-12px_rgba(0,210,255,0.15)] border-white/10 bg-white/5 backdrop-blur-md overflow-hidden rounded-2xl relative transition-all duration-500">
-      <div className="absolute inset-0 bg-gradient-to-br from-[#00D2FF]/5 via-transparent to-transparent pointer-events-none" />
+    <div className="flex w-full max-w-6xl mx-auto h-[800px] gap-6 items-start justify-center">
+      
+      {/* Sidebar Panel */}
+      <div className="h-full hidden md:block">
+        <CriteriaCardPanel 
+          criteria={generatedCriteria} 
+          onUpdate={handleUpdateCriteria} 
+        />
+      </div>
+
+      {/* Main Chat Area */}
+      <Card className="flex flex-col h-full flex-1 w-full shadow-[0_0_50px_-12px_rgba(0,210,255,0.15)] border-white/10 bg-white/5 backdrop-blur-md overflow-hidden rounded-2xl relative transition-all duration-500">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#00D2FF]/5 via-transparent to-transparent pointer-events-none" />
       
       <CardHeader className="border-b border-white/10 bg-transparent backdrop-blur-md relative z-10 p-6">
         <div className="flex items-center space-x-3">
@@ -338,6 +368,7 @@ export function IntakeView({ jobId, onComplete }: IntakeViewProps) {
           </Button>
         </div>
       </CardFooter>
-    </Card>
+      </Card>
+    </div>
   );
 }
