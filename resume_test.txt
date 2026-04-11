@@ -1,0 +1,6 @@
+Nishil Dave
+Software Engineer
+Experience with React, Python, and AI agents.
+Worked at Talent AI.
+Skills: TypeScript, FastAPI, Docker, SQL.
+Education: Computer Science.
