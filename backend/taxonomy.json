@@ -1,0 +1,3764 @@
+{
+  "Python": {
+    "canonical": "Python",
+    "parent": "Programming Languages",
+    "grandparent": "Technical Skills",
+    "aliases": ["py", "python3", "python 3.x", "python programming", "python3.x", "cpython"],
+    "implies": ["Object-Oriented Programming", "Scripting"],
+    "implies_at_proficiency": {
+      "Advanced": ["Software Architecture Patterns"],
+      "Expert": ["Language Internals", "Performance Optimisation"]
+    }
+  },
+  "JavaScript": {
+    "canonical": "JavaScript",
+    "parent": "Programming Languages",
+    "grandparent": "Technical Skills",
+    "aliases": ["js", "ES6", "ES2015+", "ecmascript", "vanilla js", "javascript programming"],
+    "implies": ["Web Development"],
+    "implies_at_proficiency": {
+      "Advanced": ["Asynchronous Programming"],
+      "Expert": ["Language Internals", "Performance Optimisation"]
+    }
+  },
+  "TypeScript": {
+    "canonical": "TypeScript",
+    "parent": "Programming Languages",
+    "grandparent": "Technical Skills",
+    "aliases": ["ts", "typescript programming", "TS"],
+    "implies": ["JavaScript", "Static Typing"],
+    "implies_at_proficiency": {
+      "Advanced": ["Type System Design"],
+      "Expert": ["Language Internals"]
+    }
+  },
+  "Java": {
+    "canonical": "Java",
+    "parent": "Programming Languages",
+    "grandparent": "Technical Skills",
+    "aliases": ["java programming", "java se", "java ee", "j2ee", "jdk", "jvm language"],
+    "implies": ["Object-Oriented Programming"],
+    "implies_at_proficiency": {
+      "Advanced": ["JVM Internals", "Design Patterns"],
+      "Expert": ["Performance Optimisation", "Concurrency"]
+    }
+  },
+  "C++": {
+    "canonical": "C++",
+    "parent": "Programming Languages",
+    "grandparent": "Technical Skills",
+    "aliases": ["cpp", "c plus plus", "cplusplus", "c++11", "c++14", "c++17", "c++20", "modern c++"],
+    "implies": ["Object-Oriented Programming", "Systems Programming"],
+    "implies_at_proficiency": {
+      "Advanced": ["Memory Management", "Performance Optimisation"],
+      "Expert": ["Compiler Design", "Language Internals"]
+    }
+  },
+  "C#": {
+    "canonical": "C#",
+    "parent": "Programming Languages",
+    "grandparent": "Technical Skills",
+    "aliases": ["csharp", "c sharp", "c-sharp", ".net c#", "dotnet c#"],
+    "implies": ["Object-Oriented Programming", ".NET"],
+    "implies_at_proficiency": {
+      "Advanced": ["Design Patterns", "LINQ"],
+      "Expert": ["CLR Internals", "Performance Optimisation"]
+    }
+  },
+  "Go": {
+    "canonical": "Go",
+    "parent": "Programming Languages",
+    "grandparent": "Technical Skills",
+    "aliases": ["golang", "go programming", "go lang"],
+    "implies": ["Concurrency", "Systems Programming"],
+    "implies_at_proficiency": {
+      "Advanced": ["Goroutines", "Performance Optimisation"],
+      "Expert": ["Runtime Internals", "Compiler Design"]
+    }
+  },
+  "Rust": {
+    "canonical": "Rust",
+    "parent": "Programming Languages",
+    "grandparent": "Technical Skills",
+    "aliases": ["rust programming", "rust lang", "rustlang"],
+    "implies": ["Systems Programming", "Memory Management"],
+    "implies_at_proficiency": {
+      "Advanced": ["Ownership & Borrowing", "Performance Optimisation"],
+      "Expert": ["Unsafe Rust", "Compiler Internals"]
+    }
+  },
+  "Ruby": {
+    "canonical": "Ruby",
+    "parent": "Programming Languages",
+    "grandparent": "Technical Skills",
+    "aliases": ["ruby programming", "ruby lang", "mri ruby"],
+    "implies": ["Object-Oriented Programming", "Scripting"],
+    "implies_at_proficiency": {
+      "Advanced": ["Metaprogramming"],
+      "Expert": ["Ruby Internals"]
+    }
+  },
+  "PHP": {
+    "canonical": "PHP",
+    "parent": "Programming Languages",
+    "grandparent": "Technical Skills",
+    "aliases": ["php programming", "php 8", "php7", "php8", "hypertext preprocessor"],
+    "implies": ["Web Development", "Scripting"],
+    "implies_at_proficiency": {
+      "Advanced": ["Design Patterns"],
+      "Expert": ["PHP Internals"]
+    }
+  },
+  "Swift": {
+    "canonical": "Swift",
+    "parent": "Programming Languages",
+    "grandparent": "Technical Skills",
+    "aliases": ["swift programming", "apple swift", "swift lang"],
+    "implies": ["iOS Development"],
+    "implies_at_proficiency": {
+      "Advanced": ["Protocol-Oriented Programming"],
+      "Expert": ["Swift Compiler Internals", "Performance Optimisation"]
+    }
+  },
+  "Kotlin": {
+    "canonical": "Kotlin",
+    "parent": "Programming Languages",
+    "grandparent": "Technical Skills",
+    "aliases": ["kotlin programming", "kotlin lang", "kt"],
+    "implies": ["Android Development", "JVM Internals"],
+    "implies_at_proficiency": {
+      "Advanced": ["Coroutines", "Kotlin Multiplatform"],
+      "Expert": ["Compiler Plugins"]
+    }
+  },
+  "Scala": {
+    "canonical": "Scala",
+    "parent": "Programming Languages",
+    "grandparent": "Technical Skills",
+    "aliases": ["scala programming", "scala lang"],
+    "implies": ["Functional Programming", "JVM Internals"],
+    "implies_at_proficiency": {
+      "Advanced": ["Type System Design", "Akka"],
+      "Expert": ["Compiler Internals"]
+    }
+  },
+  "R": {
+    "canonical": "R",
+    "parent": "Programming Languages",
+    "grandparent": "Technical Skills",
+    "aliases": ["r programming", "r language", "r-lang", "rlang", "r project"],
+    "implies": ["Statistical Analysis", "Data Visualization"],
+    "implies_at_proficiency": {
+      "Advanced": ["Statistical Modeling"],
+      "Expert": ["R Package Development"]
+    }
+  },
+  "MATLAB": {
+    "canonical": "MATLAB",
+    "parent": "Programming Languages",
+    "grandparent": "Technical Skills",
+    "aliases": ["matlab programming", "mathworks matlab", "mat lab"],
+    "implies": ["Numerical Computing", "Signal Processing"],
+    "implies_at_proficiency": {
+      "Advanced": ["Simulink"],
+      "Expert": ["Toolbox Development"]
+    }
+  },
+  "Julia": {
+    "canonical": "Julia",
+    "parent": "Programming Languages",
+    "grandparent": "Technical Skills",
+    "aliases": ["julia programming", "julia lang", "julialang"],
+    "implies": ["Numerical Computing", "Scientific Computing"],
+    "implies_at_proficiency": {
+      "Advanced": ["High-Performance Computing"],
+      "Expert": ["Julia Internals"]
+    }
+  },
+  "Perl": {
+    "canonical": "Perl",
+    "parent": "Programming Languages",
+    "grandparent": "Technical Skills",
+    "aliases": ["perl programming", "perl5", "perl 5"],
+    "implies": ["Scripting", "Text Processing"],
+    "implies_at_proficiency": {
+      "Advanced": ["Regular Expressions"],
+      "Expert": ["Perl Internals"]
+    }
+  },
+  "Shell/Bash": {
+    "canonical": "Shell/Bash",
+    "parent": "Programming Languages",
+    "grandparent": "Technical Skills",
+    "aliases": ["bash", "shell scripting", "bash scripting", "sh", "zsh", "unix shell", "linux shell", "command line"],
+    "implies": ["Linux", "Scripting"],
+    "implies_at_proficiency": {
+      "Advanced": ["System Administration"],
+      "Expert": ["Unix Internals"]
+    }
+  },
+  "PowerShell": {
+    "canonical": "PowerShell",
+    "parent": "Programming Languages",
+    "grandparent": "Technical Skills",
+    "aliases": ["powershell scripting", "ps1", "pwsh", "windows powershell"],
+    "implies": ["Windows Administration", "Scripting"],
+    "implies_at_proficiency": {
+      "Advanced": ["Active Directory Automation"],
+      "Expert": ["PowerShell Module Development"]
+    }
+  },
+  "Dart": {
+    "canonical": "Dart",
+    "parent": "Programming Languages",
+    "grandparent": "Technical Skills",
+    "aliases": ["dart programming", "dart lang", "dartlang"],
+    "implies": ["Flutter", "Object-Oriented Programming"],
+    "implies_at_proficiency": {
+      "Advanced": ["Dart VM"],
+      "Expert": ["Dart Compiler Internals"]
+    }
+  },
+  "Elixir": {
+    "canonical": "Elixir",
+    "parent": "Programming Languages",
+    "grandparent": "Technical Skills",
+    "aliases": ["elixir programming", "elixir lang"],
+    "implies": ["Functional Programming", "Concurrency"],
+    "implies_at_proficiency": {
+      "Advanced": ["OTP", "Phoenix Framework"],
+      "Expert": ["BEAM VM Internals"]
+    }
+  },
+  "Haskell": {
+    "canonical": "Haskell",
+    "parent": "Programming Languages",
+    "grandparent": "Technical Skills",
+    "aliases": ["haskell programming", "haskell lang"],
+    "implies": ["Functional Programming", "Static Typing"],
+    "implies_at_proficiency": {
+      "Advanced": ["Type System Design", "Monads"],
+      "Expert": ["GHC Internals"]
+    }
+  },
+  "Lua": {
+    "canonical": "Lua",
+    "parent": "Programming Languages",
+    "grandparent": "Technical Skills",
+    "aliases": ["lua programming", "lua scripting", "lua lang"],
+    "implies": ["Scripting", "Embedded Programming"],
+    "implies_at_proficiency": {
+      "Advanced": ["Game Scripting"],
+      "Expert": ["Lua C API"]
+    }
+  },
+  "Groovy": {
+    "canonical": "Groovy",
+    "parent": "Programming Languages",
+    "grandparent": "Technical Skills",
+    "aliases": ["groovy programming", "apache groovy"],
+    "implies": ["JVM Internals", "Scripting"],
+    "implies_at_proficiency": {
+      "Advanced": ["Gradle Build Scripts", "Jenkins Pipelines"],
+      "Expert": ["AST Transformations"]
+    }
+  },
+  "Assembly": {
+    "canonical": "Assembly",
+    "parent": "Programming Languages",
+    "grandparent": "Technical Skills",
+    "aliases": ["asm", "assembly language", "x86 assembly", "arm assembly", "masm", "nasm"],
+    "implies": ["Systems Programming", "Computer Architecture"],
+    "implies_at_proficiency": {
+      "Advanced": ["Performance Optimisation", "Reverse Engineering"],
+      "Expert": ["Microarchitecture"]
+    }
+  },
+
+  "React": {
+    "canonical": "React",
+    "parent": "Frontend Frameworks",
+    "grandparent": "Technical Skills",
+    "aliases": ["reactjs", "react.js", "react js", "react 18", "react library"],
+    "implies": ["JavaScript", "HTML", "CSS"],
+    "implies_at_proficiency": {
+      "Advanced": ["State Management", "Performance Optimisation"],
+      "Expert": ["React Internals", "Custom Renderers"]
+    }
+  },
+  "Vue.js": {
+    "canonical": "Vue.js",
+    "parent": "Frontend Frameworks",
+    "grandparent": "Technical Skills",
+    "aliases": ["vue", "vuejs", "vue 3", "vue.js 3", "vue js"],
+    "implies": ["JavaScript", "HTML", "CSS"],
+    "implies_at_proficiency": {
+      "Advanced": ["Vuex", "Vue Router"],
+      "Expert": ["Vue Internals", "Custom Directives"]
+    }
+  },
+  "Angular": {
+    "canonical": "Angular",
+    "parent": "Frontend Frameworks",
+    "grandparent": "Technical Skills",
+    "aliases": ["angular 2+", "angularjs", "angular framework", "ng", "angular 17"],
+    "implies": ["TypeScript", "HTML", "CSS"],
+    "implies_at_proficiency": {
+      "Advanced": ["RxJS", "NgRx"],
+      "Expert": ["Angular Internals", "Custom Schematics"]
+    }
+  },
+  "Next.js": {
+    "canonical": "Next.js",
+    "parent": "Frontend Frameworks",
+    "grandparent": "Technical Skills",
+    "aliases": ["nextjs", "next js", "next.js framework", "next 14"],
+    "implies": ["React", "JavaScript", "Node.js"],
+    "implies_at_proficiency": {
+      "Advanced": ["Server-Side Rendering", "Static Site Generation"],
+      "Expert": ["Edge Functions", "Middleware"]
+    }
+  },
+  "Nuxt.js": {
+    "canonical": "Nuxt.js",
+    "parent": "Frontend Frameworks",
+    "grandparent": "Technical Skills",
+    "aliases": ["nuxtjs", "nuxt js", "nuxt 3", "nuxt framework"],
+    "implies": ["Vue.js", "JavaScript", "Node.js"],
+    "implies_at_proficiency": {
+      "Advanced": ["Server-Side Rendering"],
+      "Expert": ["Nuxt Modules"]
+    }
+  },
+  "Svelte": {
+    "canonical": "Svelte",
+    "parent": "Frontend Frameworks",
+    "grandparent": "Technical Skills",
+    "aliases": ["sveltejs", "svelte js", "svelte framework", "sveltekit"],
+    "implies": ["JavaScript", "HTML", "CSS"],
+    "implies_at_proficiency": {
+      "Advanced": ["SvelteKit"],
+      "Expert": ["Compiler Internals"]
+    }
+  },
+  "HTML": {
+    "canonical": "HTML",
+    "parent": "Web Fundamentals",
+    "grandparent": "Technical Skills",
+    "aliases": ["html5", "hypertext markup language", "semantic html", "html markup"],
+    "implies": ["Web Development"],
+    "implies_at_proficiency": {
+      "Advanced": ["Accessibility (a11y)", "Semantic HTML"],
+      "Expert": ["Web Standards"]
+    }
+  },
+  "CSS": {
+    "canonical": "CSS",
+    "parent": "Web Fundamentals",
+    "grandparent": "Technical Skills",
+    "aliases": ["css3", "cascading style sheets", "stylesheets", "css styling"],
+    "implies": ["Web Development"],
+    "implies_at_proficiency": {
+      "Advanced": ["CSS Grid", "CSS Animations", "Responsive Design"],
+      "Expert": ["CSS Architecture", "Custom Properties"]
+    }
+  },
+  "SASS/SCSS": {
+    "canonical": "SASS/SCSS",
+    "parent": "CSS Preprocessors",
+    "grandparent": "Technical Skills",
+    "aliases": ["sass", "scss", "syntactically awesome stylesheets", "sass css"],
+    "implies": ["CSS"],
+    "implies_at_proficiency": {
+      "Advanced": ["Design Systems"],
+      "Expert": ["CSS Architecture"]
+    }
+  },
+  "Tailwind CSS": {
+    "canonical": "Tailwind CSS",
+    "parent": "CSS Frameworks",
+    "grandparent": "Technical Skills",
+    "aliases": ["tailwindcss", "tailwind", "tailwind css framework"],
+    "implies": ["CSS", "Responsive Design"],
+    "implies_at_proficiency": {
+      "Advanced": ["Design Systems"],
+      "Expert": ["Plugin Development"]
+    }
+  },
+  "Bootstrap": {
+    "canonical": "Bootstrap",
+    "parent": "CSS Frameworks",
+    "grandparent": "Technical Skills",
+    "aliases": ["bootstrap css", "bootstrap 5", "twitter bootstrap", "bootstrap framework"],
+    "implies": ["CSS", "Responsive Design", "HTML"],
+    "implies_at_proficiency": {
+      "Advanced": ["Theme Customization"],
+      "Expert": ["Component Architecture"]
+    }
+  },
+  "jQuery": {
+    "canonical": "jQuery",
+    "parent": "JavaScript Libraries",
+    "grandparent": "Technical Skills",
+    "aliases": ["jquery library", "jquery js", "jq"],
+    "implies": ["JavaScript", "HTML", "CSS"],
+    "implies_at_proficiency": {}
+  },
+  "Redux": {
+    "canonical": "Redux",
+    "parent": "State Management",
+    "grandparent": "Technical Skills",
+    "aliases": ["redux.js", "redux toolkit", "rtk", "react-redux"],
+    "implies": ["JavaScript", "State Management"],
+    "implies_at_proficiency": {
+      "Advanced": ["Redux Saga", "Redux Thunk"],
+      "Expert": ["Middleware Architecture"]
+    }
+  },
+  "Zustand": {
+    "canonical": "Zustand",
+    "parent": "State Management",
+    "grandparent": "Technical Skills",
+    "aliases": ["zustand state", "zustand store"],
+    "implies": ["JavaScript", "React", "State Management"],
+    "implies_at_proficiency": {}
+  },
+  "GraphQL (client)": {
+    "canonical": "GraphQL (client)",
+    "parent": "API Technologies",
+    "grandparent": "Technical Skills",
+    "aliases": ["graphql client", "apollo client", "urql", "relay"],
+    "implies": ["GraphQL", "JavaScript"],
+    "implies_at_proficiency": {
+      "Advanced": ["Caching Strategies"],
+      "Expert": ["Schema Design"]
+    }
+  },
+  "REST API consumption": {
+    "canonical": "REST API consumption",
+    "parent": "API Technologies",
+    "grandparent": "Technical Skills",
+    "aliases": ["rest client", "api consumption", "consuming rest apis", "http client"],
+    "implies": ["HTTP", "JSON"],
+    "implies_at_proficiency": {}
+  },
+  "WebSockets": {
+    "canonical": "WebSockets",
+    "parent": "Real-Time Technologies",
+    "grandparent": "Technical Skills",
+    "aliases": ["websocket", "ws", "web sockets", "socket.io client"],
+    "implies": ["JavaScript", "Real-Time Communication"],
+    "implies_at_proficiency": {
+      "Advanced": ["Event-Driven Architecture"],
+      "Expert": ["Protocol Design"]
+    }
+  },
+  "Three.js": {
+    "canonical": "Three.js",
+    "parent": "Graphics & Visualization",
+    "grandparent": "Technical Skills",
+    "aliases": ["threejs", "three js", "3js", "webgl three.js"],
+    "implies": ["JavaScript", "WebGL", "3D Graphics"],
+    "implies_at_proficiency": {
+      "Advanced": ["Shader Programming"],
+      "Expert": ["Custom Renderers"]
+    }
+  },
+  "D3.js": {
+    "canonical": "D3.js",
+    "parent": "Graphics & Visualization",
+    "grandparent": "Technical Skills",
+    "aliases": ["d3", "d3js", "d3 js", "data-driven documents"],
+    "implies": ["JavaScript", "Data Visualization", "SVG"],
+    "implies_at_proficiency": {
+      "Advanced": ["Custom Chart Components"],
+      "Expert": ["Interactive Data Dashboards"]
+    }
+  },
+
+  "Node.js": {
+    "canonical": "Node.js",
+    "parent": "Backend Runtimes",
+    "grandparent": "Technical Skills",
+    "aliases": ["nodejs", "node js", "node", "node.js runtime"],
+    "implies": ["JavaScript", "Asynchronous Programming"],
+    "implies_at_proficiency": {
+      "Advanced": ["Event Loop", "Streams"],
+      "Expert": ["V8 Internals", "Native Addons"]
+    }
+  },
+  "Express.js": {
+    "canonical": "Express.js",
+    "parent": "Backend Frameworks",
+    "grandparent": "Technical Skills",
+    "aliases": ["expressjs", "express js", "express", "express framework"],
+    "implies": ["Node.js", "JavaScript", "REST API design"],
+    "implies_at_proficiency": {
+      "Advanced": ["Middleware Architecture"],
+      "Expert": ["Custom Express Plugins"]
+    }
+  },
+  "FastAPI": {
+    "canonical": "FastAPI",
+    "parent": "Backend Frameworks",
+    "grandparent": "Technical Skills",
+    "aliases": ["fast api", "fastapi framework", "fast-api"],
+    "implies": ["Python", "REST API design"],
+    "implies_at_proficiency": {
+      "Advanced": ["Pydantic", "Dependency Injection"],
+      "Expert": ["ASGI Internals"]
+    }
+  },
+  "Django": {
+    "canonical": "Django",
+    "parent": "Backend Frameworks",
+    "grandparent": "Technical Skills",
+    "aliases": ["django framework", "django python", "django web framework", "drf", "django rest framework"],
+    "implies": ["Python", "REST API design"],
+    "implies_at_proficiency": {
+      "Advanced": ["Django ORM", "Django REST Framework"],
+      "Expert": ["Django Internals", "Custom Middleware"]
+    }
+  },
+  "Flask": {
+    "canonical": "Flask",
+    "parent": "Backend Frameworks",
+    "grandparent": "Technical Skills",
+    "aliases": ["flask framework", "flask python", "flask web"],
+    "implies": ["Python", "REST API design"],
+    "implies_at_proficiency": {
+      "Advanced": ["Blueprint Architecture"],
+      "Expert": ["Werkzeug Internals"]
+    }
+  },
+  "Spring Boot": {
+    "canonical": "Spring Boot",
+    "parent": "Backend Frameworks",
+    "grandparent": "Technical Skills",
+    "aliases": ["springboot", "spring-boot", "spring boot framework", "spring framework"],
+    "implies": ["Java", "REST API design"],
+    "implies_at_proficiency": {
+      "Advanced": ["Spring Security", "Spring Data"],
+      "Expert": ["Spring Internals", "Custom Starters"]
+    }
+  },
+  "Rails": {
+    "canonical": "Rails",
+    "parent": "Backend Frameworks",
+    "grandparent": "Technical Skills",
+    "aliases": ["ruby on rails", "ror", "rails framework", "ruby rails"],
+    "implies": ["Ruby", "REST API design"],
+    "implies_at_proficiency": {
+      "Advanced": ["ActiveRecord", "Action Cable"],
+      "Expert": ["Rails Internals"]
+    }
+  },
+  "Laravel": {
+    "canonical": "Laravel",
+    "parent": "Backend Frameworks",
+    "grandparent": "Technical Skills",
+    "aliases": ["laravel framework", "laravel php", "laravel web"],
+    "implies": ["PHP", "REST API design"],
+    "implies_at_proficiency": {
+      "Advanced": ["Eloquent ORM", "Laravel Queue"],
+      "Expert": ["Laravel Internals", "Package Development"]
+    }
+  },
+  "ASP.NET": {
+    "canonical": "ASP.NET",
+    "parent": "Backend Frameworks",
+    "grandparent": "Technical Skills",
+    "aliases": ["asp.net core", "aspnet", "asp net", "dotnet web", ".net web api", "asp.net mvc"],
+    "implies": ["C#", ".NET", "REST API design"],
+    "implies_at_proficiency": {
+      "Advanced": ["Entity Framework", "Middleware"],
+      "Expert": ["Kestrel Internals"]
+    }
+  },
+  "Gin": {
+    "canonical": "Gin",
+    "parent": "Backend Frameworks",
+    "grandparent": "Technical Skills",
+    "aliases": ["gin framework", "gin-gonic", "gin golang", "gin go"],
+    "implies": ["Go", "REST API design"],
+    "implies_at_proficiency": {
+      "Advanced": ["Middleware Architecture"],
+      "Expert": ["Custom HTTP Handlers"]
+    }
+  },
+  "NestJS": {
+    "canonical": "NestJS",
+    "parent": "Backend Frameworks",
+    "grandparent": "Technical Skills",
+    "aliases": ["nestjs framework", "nest js", "nest.js"],
+    "implies": ["TypeScript", "Node.js", "REST API design"],
+    "implies_at_proficiency": {
+      "Advanced": ["Dependency Injection", "Microservices"],
+      "Expert": ["Custom Decorators", "Dynamic Modules"]
+    }
+  },
+  "tRPC": {
+    "canonical": "tRPC",
+    "parent": "API Technologies",
+    "grandparent": "Technical Skills",
+    "aliases": ["trpc framework", "t-rpc", "typesafe rpc"],
+    "implies": ["TypeScript", "Node.js"],
+    "implies_at_proficiency": {
+      "Advanced": ["End-to-End Type Safety"],
+      "Expert": ["Custom Adapters"]
+    }
+  },
+  "gRPC": {
+    "canonical": "gRPC",
+    "parent": "API Technologies",
+    "grandparent": "Technical Skills",
+    "aliases": ["grpc framework", "google rpc", "protocol buffers rpc"],
+    "implies": ["Protocol Buffers", "Microservices"],
+    "implies_at_proficiency": {
+      "Advanced": ["Streaming"],
+      "Expert": ["Custom Interceptors"]
+    }
+  },
+  "REST API design": {
+    "canonical": "REST API design",
+    "parent": "API Technologies",
+    "grandparent": "Technical Skills",
+    "aliases": ["rest api", "restful api", "restful services", "rest architecture", "api design", "rest api development"],
+    "implies": ["HTTP", "JSON"],
+    "implies_at_proficiency": {
+      "Advanced": ["API Versioning", "HATEOAS"],
+      "Expert": ["API Gateway Design"]
+    }
+  },
+  "GraphQL (server)": {
+    "canonical": "GraphQL (server)",
+    "parent": "API Technologies",
+    "grandparent": "Technical Skills",
+    "aliases": ["graphql server", "graphql api", "graphql backend", "apollo server"],
+    "implies": ["GraphQL", "API Design"],
+    "implies_at_proficiency": {
+      "Advanced": ["Schema Design", "DataLoader"],
+      "Expert": ["Federation", "Custom Directives"]
+    }
+  },
+  "WebSocket server": {
+    "canonical": "WebSocket server",
+    "parent": "Real-Time Technologies",
+    "grandparent": "Technical Skills",
+    "aliases": ["websocket backend", "socket.io server", "ws server"],
+    "implies": ["WebSockets", "Backend Development"],
+    "implies_at_proficiency": {
+      "Advanced": ["Connection Management", "Scaling"],
+      "Expert": ["Protocol Design"]
+    }
+  },
+
+  "PostgreSQL": {
+    "canonical": "PostgreSQL",
+    "parent": "Relational Databases",
+    "grandparent": "Technical Skills",
+    "aliases": ["postgres", "pg", "postgresql db", "psql", "pgsql"],
+    "implies": ["SQL", "Database Design"],
+    "implies_at_proficiency": {
+      "Advanced": ["Query Optimization", "Indexing Strategies"],
+      "Expert": ["PostgreSQL Internals", "Extension Development"]
+    }
+  },
+  "MySQL": {
+    "canonical": "MySQL",
+    "parent": "Relational Databases",
+    "grandparent": "Technical Skills",
+    "aliases": ["mysql db", "mysql database", "mariadb", "mysql server"],
+    "implies": ["SQL", "Database Design"],
+    "implies_at_proficiency": {
+      "Advanced": ["Query Optimization", "Replication"],
+      "Expert": ["MySQL Internals", "Storage Engines"]
+    }
+  },
+  "SQLite": {
+    "canonical": "SQLite",
+    "parent": "Relational Databases",
+    "grandparent": "Technical Skills",
+    "aliases": ["sqlite3", "sqlite database", "sqlite db"],
+    "implies": ["SQL"],
+    "implies_at_proficiency": {}
+  },
+  "MongoDB": {
+    "canonical": "MongoDB",
+    "parent": "NoSQL Databases",
+    "grandparent": "Technical Skills",
+    "aliases": ["mongo", "mongodb database", "mongo db", "mongoose"],
+    "implies": ["NoSQL", "Database Design"],
+    "implies_at_proficiency": {
+      "Advanced": ["Aggregation Pipeline", "Sharding"],
+      "Expert": ["MongoDB Internals", "WiredTiger"]
+    }
+  },
+  "Redis": {
+    "canonical": "Redis",
+    "parent": "In-Memory Databases",
+    "grandparent": "Technical Skills",
+    "aliases": ["redis cache", "redis db", "redis database", "redis server"],
+    "implies": ["Caching", "Key-Value Stores"],
+    "implies_at_proficiency": {
+      "Advanced": ["Redis Pub/Sub", "Redis Cluster"],
+      "Expert": ["Redis Internals", "Lua Scripting"]
+    }
+  },
+  "Elasticsearch": {
+    "canonical": "Elasticsearch",
+    "parent": "Search Engines",
+    "grandparent": "Technical Skills",
+    "aliases": ["elastic", "es", "elastic search", "elasticsearch db", "opensearch"],
+    "implies": ["Full-Text Search", "Distributed Systems"],
+    "implies_at_proficiency": {
+      "Advanced": ["Query DSL", "Index Tuning"],
+      "Expert": ["Cluster Management", "Plugin Development"]
+    }
+  },
+  "Cassandra": {
+    "canonical": "Cassandra",
+    "parent": "NoSQL Databases",
+    "grandparent": "Technical Skills",
+    "aliases": ["apache cassandra", "cassandra db", "cassandra database"],
+    "implies": ["NoSQL", "Distributed Systems"],
+    "implies_at_proficiency": {
+      "Advanced": ["Data Modeling", "Compaction Strategies"],
+      "Expert": ["Cassandra Internals"]
+    }
+  },
+  "DynamoDB": {
+    "canonical": "DynamoDB",
+    "parent": "NoSQL Databases",
+    "grandparent": "Technical Skills",
+    "aliases": ["aws dynamodb", "dynamo db", "dynamodb database", "amazon dynamodb"],
+    "implies": ["AWS", "NoSQL"],
+    "implies_at_proficiency": {
+      "Advanced": ["Single Table Design", "GSI/LSI"],
+      "Expert": ["DynamoDB Streams", "Cost Optimization"]
+    }
+  },
+  "Firebase Firestore": {
+    "canonical": "Firebase Firestore",
+    "parent": "NoSQL Databases",
+    "grandparent": "Technical Skills",
+    "aliases": ["firestore", "cloud firestore", "firebase db", "google firestore"],
+    "implies": ["NoSQL", "Firebase"],
+    "implies_at_proficiency": {
+      "Advanced": ["Security Rules", "Real-Time Sync"],
+      "Expert": ["Data Modeling at Scale"]
+    }
+  },
+  "Neo4j": {
+    "canonical": "Neo4j",
+    "parent": "Graph Databases",
+    "grandparent": "Technical Skills",
+    "aliases": ["neo4j database", "neo4j graph", "cypher"],
+    "implies": ["Graph Databases", "Cypher Query Language"],
+    "implies_at_proficiency": {
+      "Advanced": ["Graph Algorithms"],
+      "Expert": ["Neo4j Internals"]
+    }
+  },
+  "ClickHouse": {
+    "canonical": "ClickHouse",
+    "parent": "Analytical Databases",
+    "grandparent": "Technical Skills",
+    "aliases": ["clickhouse db", "clickhouse database", "click house"],
+    "implies": ["SQL", "OLAP", "Data Warehousing"],
+    "implies_at_proficiency": {
+      "Advanced": ["Materialized Views"],
+      "Expert": ["ClickHouse Internals"]
+    }
+  },
+  "Snowflake": {
+    "canonical": "Snowflake",
+    "parent": "Analytical Databases",
+    "grandparent": "Technical Skills",
+    "aliases": ["snowflake db", "snowflake data warehouse", "snowflake cloud"],
+    "implies": ["SQL", "Data Warehousing", "Cloud Computing"],
+    "implies_at_proficiency": {
+      "Advanced": ["Data Sharing", "Snowpipe"],
+      "Expert": ["Cost Optimization", "Architecture Design"]
+    }
+  },
+  "BigQuery": {
+    "canonical": "BigQuery",
+    "parent": "Analytical Databases",
+    "grandparent": "Technical Skills",
+    "aliases": ["google bigquery", "bq", "big query", "bigquery sql"],
+    "implies": ["SQL", "GCP", "Data Warehousing"],
+    "implies_at_proficiency": {
+      "Advanced": ["Partitioning", "Clustering"],
+      "Expert": ["Cost Optimization", "BigQuery ML"]
+    }
+  },
+  "MS SQL Server": {
+    "canonical": "MS SQL Server",
+    "parent": "Relational Databases",
+    "grandparent": "Technical Skills",
+    "aliases": ["mssql", "sql server", "microsoft sql server", "tsql", "t-sql"],
+    "implies": ["SQL", "Database Design"],
+    "implies_at_proficiency": {
+      "Advanced": ["SSIS", "SSRS"],
+      "Expert": ["SQL Server Internals"]
+    }
+  },
+  "Oracle DB": {
+    "canonical": "Oracle DB",
+    "parent": "Relational Databases",
+    "grandparent": "Technical Skills",
+    "aliases": ["oracle database", "oracle sql", "oracle rdbms", "plsql", "pl/sql"],
+    "implies": ["SQL", "Database Design"],
+    "implies_at_proficiency": {
+      "Advanced": ["PL/SQL", "RAC"],
+      "Expert": ["Oracle Internals", "Exadata"]
+    }
+  },
+  "CockroachDB": {
+    "canonical": "CockroachDB",
+    "parent": "Relational Databases",
+    "grandparent": "Technical Skills",
+    "aliases": ["cockroach db", "crdb", "cockroachdb database"],
+    "implies": ["SQL", "Distributed Systems"],
+    "implies_at_proficiency": {
+      "Advanced": ["Geo-Partitioning"],
+      "Expert": ["Distributed SQL Internals"]
+    }
+  },
+
+  "TensorFlow": {
+    "canonical": "TensorFlow",
+    "parent": "ML Frameworks",
+    "grandparent": "Data & AI",
+    "aliases": ["tensorflow 2", "tf", "tf2", "tensorflow framework", "google tensorflow"],
+    "implies": ["Python", "Deep Learning", "Machine Learning", "NumPy"],
+    "implies_at_proficiency": {
+      "Advanced": ["TensorFlow Serving", "TFX"],
+      "Expert": ["Custom Ops", "TPU Programming"]
+    }
+  },
+  "PyTorch": {
+    "canonical": "PyTorch",
+    "parent": "ML Frameworks",
+    "grandparent": "Data & AI",
+    "aliases": ["pytorch framework", "torch", "pytorch ml", "meta pytorch"],
+    "implies": ["Python", "Deep Learning", "Machine Learning", "NumPy"],
+    "implies_at_proficiency": {
+      "Advanced": ["PyTorch Lightning", "TorchScript"],
+      "Expert": ["Custom CUDA Kernels", "Distributed Training"]
+    }
+  },
+  "Scikit-learn": {
+    "canonical": "Scikit-learn",
+    "parent": "ML Frameworks",
+    "grandparent": "Data & AI",
+    "aliases": ["sklearn", "scikit learn", "sk-learn", "scikit-learn library"],
+    "implies": ["Python", "Machine Learning", "NumPy"],
+    "implies_at_proficiency": {
+      "Advanced": ["Feature Engineering", "Pipeline Design"],
+      "Expert": ["Custom Estimators"]
+    }
+  },
+  "Keras": {
+    "canonical": "Keras",
+    "parent": "ML Frameworks",
+    "grandparent": "Data & AI",
+    "aliases": ["keras library", "keras api", "tf.keras"],
+    "implies": ["Python", "Deep Learning", "TensorFlow"],
+    "implies_at_proficiency": {
+      "Advanced": ["Custom Layers"],
+      "Expert": ["Custom Training Loops"]
+    }
+  },
+  "Hugging Face Transformers": {
+    "canonical": "Hugging Face Transformers",
+    "parent": "NLP Frameworks",
+    "grandparent": "Data & AI",
+    "aliases": ["huggingface", "hf transformers", "transformers library", "hugging face", "🤗 transformers"],
+    "implies": ["Python", "NLP", "Deep Learning"],
+    "implies_at_proficiency": {
+      "Advanced": ["Model Fine-tuning", "Tokenizers"],
+      "Expert": ["Custom Model Architecture"]
+    }
+  },
+  "LangChain": {
+    "canonical": "LangChain",
+    "parent": "LLM Frameworks",
+    "grandparent": "Data & AI",
+    "aliases": ["langchain framework", "lang chain", "langchain python"],
+    "implies": ["Python", "LLM Orchestration", "Prompt Engineering"],
+    "implies_at_proficiency": {
+      "Advanced": ["RAG", "Agents"],
+      "Expert": ["Custom Chains", "Memory Management"]
+    }
+  },
+  "LlamaIndex": {
+    "canonical": "LlamaIndex",
+    "parent": "LLM Frameworks",
+    "grandparent": "Data & AI",
+    "aliases": ["llama index", "llamaindex framework", "gpt index"],
+    "implies": ["Python", "LLM Orchestration", "RAG"],
+    "implies_at_proficiency": {
+      "Advanced": ["Custom Retrievers"],
+      "Expert": ["Custom Index Structures"]
+    }
+  },
+  "OpenAI API": {
+    "canonical": "OpenAI API",
+    "parent": "LLM APIs",
+    "grandparent": "Data & AI",
+    "aliases": ["openai", "gpt api", "chatgpt api", "gpt-4 api", "openai sdk"],
+    "implies": ["Prompt Engineering", "REST API consumption"],
+    "implies_at_proficiency": {
+      "Advanced": ["Function Calling", "Embeddings"],
+      "Expert": ["Fine-tuning", "Token Optimization"]
+    }
+  },
+  "Anthropic API": {
+    "canonical": "Anthropic API",
+    "parent": "LLM APIs",
+    "grandparent": "Data & AI",
+    "aliases": ["anthropic", "claude api", "claude sdk"],
+    "implies": ["Prompt Engineering", "REST API consumption"],
+    "implies_at_proficiency": {
+      "Advanced": ["Tool Use", "Long Context"],
+      "Expert": ["Token Optimization"]
+    }
+  },
+  "Deep Learning": {
+    "canonical": "Deep Learning",
+    "parent": "Machine Learning Disciplines",
+    "grandparent": "Data & AI",
+    "aliases": ["DL", "neural networks", "deep neural networks", "deep learning techniques"],
+    "implies": ["Machine Learning", "Linear Algebra"],
+    "implies_at_proficiency": {
+      "Advanced": ["CNN", "RNN", "Attention Mechanisms"],
+      "Expert": ["Architecture Design", "Research"]
+    }
+  },
+  "Machine Learning": {
+    "canonical": "Machine Learning",
+    "parent": "Machine Learning Disciplines",
+    "grandparent": "Data & AI",
+    "aliases": ["ML", "machine learning techniques", "machine learning engineering"],
+    "implies": ["Python", "Statistics", "Linear Algebra"],
+    "implies_at_proficiency": {
+      "Advanced": ["Feature Engineering", "Model Selection"],
+      "Expert": ["Research", "Custom Algorithms"]
+    }
+  },
+  "NLP": {
+    "canonical": "NLP",
+    "parent": "Machine Learning Disciplines",
+    "grandparent": "Data & AI",
+    "aliases": ["natural language processing", "nlp techniques", "text mining", "computational linguistics"],
+    "implies": ["Machine Learning", "Python"],
+    "implies_at_proficiency": {
+      "Advanced": ["Named Entity Recognition", "Sentiment Analysis"],
+      "Expert": ["Transformer Architecture", "Language Model Training"]
+    }
+  },
+  "Computer Vision": {
+    "canonical": "Computer Vision",
+    "parent": "Machine Learning Disciplines",
+    "grandparent": "Data & AI",
+    "aliases": ["CV", "image recognition", "visual computing", "image processing"],
+    "implies": ["Deep Learning", "Python"],
+    "implies_at_proficiency": {
+      "Advanced": ["Object Detection", "Image Segmentation"],
+      "Expert": ["3D Vision", "Custom Architectures"]
+    }
+  },
+  "Reinforcement Learning": {
+    "canonical": "Reinforcement Learning",
+    "parent": "Machine Learning Disciplines",
+    "grandparent": "Data & AI",
+    "aliases": ["RL", "reinforcement learning techniques", "reward learning"],
+    "implies": ["Machine Learning", "Python"],
+    "implies_at_proficiency": {
+      "Advanced": ["Policy Gradient", "Q-Learning"],
+      "Expert": ["Multi-Agent RL", "RLHF"]
+    }
+  },
+  "MLOps": {
+    "canonical": "MLOps",
+    "parent": "ML Infrastructure",
+    "grandparent": "Data & AI",
+    "aliases": ["ml ops", "machine learning operations", "ml devops", "ml engineering"],
+    "implies": ["Machine Learning", "DevOps", "CI/CD"],
+    "implies_at_proficiency": {
+      "Advanced": ["Model Monitoring", "A/B Testing"],
+      "Expert": ["ML Platform Architecture"]
+    }
+  },
+  "Weights & Biases": {
+    "canonical": "Weights & Biases",
+    "parent": "ML Infrastructure",
+    "grandparent": "Data & AI",
+    "aliases": ["wandb", "w&b", "weights and biases"],
+    "implies": ["Machine Learning", "Experiment Tracking"],
+    "implies_at_proficiency": {
+      "Advanced": ["Hyperparameter Sweeps"],
+      "Expert": ["Custom Integrations"]
+    }
+  },
+  "MLflow": {
+    "canonical": "MLflow",
+    "parent": "ML Infrastructure",
+    "grandparent": "Data & AI",
+    "aliases": ["mlflow framework", "ml flow", "mlflow tracking"],
+    "implies": ["Machine Learning", "Experiment Tracking", "Python"],
+    "implies_at_proficiency": {
+      "Advanced": ["Model Registry"],
+      "Expert": ["Custom Plugins"]
+    }
+  },
+  "Feature Engineering": {
+    "canonical": "Feature Engineering",
+    "parent": "ML Practices",
+    "grandparent": "Data & AI",
+    "aliases": ["feature extraction", "feature creation", "feature selection", "feature transformation"],
+    "implies": ["Machine Learning", "Statistics"],
+    "implies_at_proficiency": {
+      "Advanced": ["Automated Feature Engineering"],
+      "Expert": ["Feature Store Design"]
+    }
+  },
+  "Model Fine-tuning": {
+    "canonical": "Model Fine-tuning",
+    "parent": "ML Practices",
+    "grandparent": "Data & AI",
+    "aliases": ["fine-tuning", "finetuning", "model finetuning", "transfer learning", "fine tuning"],
+    "implies": ["Deep Learning", "Python"],
+    "implies_at_proficiency": {
+      "Advanced": ["LoRA", "QLoRA"],
+      "Expert": ["RLHF", "Custom Training Loops"]
+    }
+  },
+  "RAG": {
+    "canonical": "RAG",
+    "parent": "LLM Techniques",
+    "grandparent": "Data & AI",
+    "aliases": ["retrieval augmented generation", "retrieval-augmented generation", "rag pipeline"],
+    "implies": ["LLM Orchestration", "Vector Databases"],
+    "implies_at_proficiency": {
+      "Advanced": ["Hybrid Search", "Re-ranking"],
+      "Expert": ["Custom Retrieval Strategies"]
+    }
+  },
+  "Vector Databases": {
+    "canonical": "Vector Databases",
+    "parent": "Database Technologies",
+    "grandparent": "Data & AI",
+    "aliases": ["vector db", "vector store", "pinecone", "weaviate", "qdrant", "chroma", "milvus", "pgvector"],
+    "implies": ["Embeddings", "Similarity Search"],
+    "implies_at_proficiency": {
+      "Advanced": ["Index Tuning", "Hybrid Search"],
+      "Expert": ["Custom Distance Metrics"]
+    }
+  },
+  "Prompt Engineering": {
+    "canonical": "Prompt Engineering",
+    "parent": "LLM Techniques",
+    "grandparent": "Data & AI",
+    "aliases": ["prompt design", "prompt crafting", "prompt optimization", "prompting"],
+    "implies": ["LLM Orchestration"],
+    "implies_at_proficiency": {
+      "Advanced": ["Chain-of-Thought", "Few-Shot Prompting"],
+      "Expert": ["Prompt Optimization", "Red Teaming"]
+    }
+  },
+  "LLM Orchestration": {
+    "canonical": "LLM Orchestration",
+    "parent": "LLM Techniques",
+    "grandparent": "Data & AI",
+    "aliases": ["llm orchestration framework", "ai orchestration", "llm pipeline"],
+    "implies": ["Prompt Engineering"],
+    "implies_at_proficiency": {
+      "Advanced": ["Agent Design", "Tool Use"],
+      "Expert": ["Multi-Agent Systems"]
+    }
+  },
+
+  "Apache Spark": {
+    "canonical": "Apache Spark",
+    "parent": "Data Processing Frameworks",
+    "grandparent": "Data & AI",
+    "aliases": ["spark", "pyspark", "spark sql", "apache spark framework"],
+    "implies": ["Distributed Systems", "Big Data"],
+    "implies_at_proficiency": {
+      "Advanced": ["Spark Streaming", "Spark ML"],
+      "Expert": ["Spark Internals", "Custom Partitioners"]
+    }
+  },
+  "Apache Kafka": {
+    "canonical": "Apache Kafka",
+    "parent": "Data Streaming",
+    "grandparent": "Data & AI",
+    "aliases": ["kafka", "kafka streaming", "kafka mq", "confluent kafka"],
+    "implies": ["Distributed Systems", "Event-Driven Architecture"],
+    "implies_at_proficiency": {
+      "Advanced": ["Kafka Streams", "Kafka Connect"],
+      "Expert": ["Kafka Internals", "Multi-Cluster"]
+    }
+  },
+  "Apache Airflow": {
+    "canonical": "Apache Airflow",
+    "parent": "Workflow Orchestration",
+    "grandparent": "Data & AI",
+    "aliases": ["airflow", "airflow dag", "airflow orchestration"],
+    "implies": ["Python", "ETL Pipelines"],
+    "implies_at_proficiency": {
+      "Advanced": ["Custom Operators", "Dynamic DAGs"],
+      "Expert": ["Airflow Architecture", "Plugin Development"]
+    }
+  },
+  "dbt": {
+    "canonical": "dbt",
+    "parent": "Data Transformation",
+    "grandparent": "Data & AI",
+    "aliases": ["dbt tool", "data build tool", "dbt core", "dbt cloud"],
+    "implies": ["SQL", "Data Warehousing"],
+    "implies_at_proficiency": {
+      "Advanced": ["Macros", "Testing"],
+      "Expert": ["Custom Materializations", "Package Development"]
+    }
+  },
+  "Pandas": {
+    "canonical": "Pandas",
+    "parent": "Data Analysis Libraries",
+    "grandparent": "Data & AI",
+    "aliases": ["pandas library", "pandas python", "pd"],
+    "implies": ["Python", "Data Analysis"],
+    "implies_at_proficiency": {
+      "Advanced": ["Performance Optimization", "MultiIndex"],
+      "Expert": ["Extension Arrays"]
+    }
+  },
+  "NumPy": {
+    "canonical": "NumPy",
+    "parent": "Data Analysis Libraries",
+    "grandparent": "Data & AI",
+    "aliases": ["numpy library", "numpy python", "np", "numerical python"],
+    "implies": ["Python", "Linear Algebra"],
+    "implies_at_proficiency": {
+      "Advanced": ["Vectorization", "Broadcasting"],
+      "Expert": ["C Extensions"]
+    }
+  },
+  "Polars": {
+    "canonical": "Polars",
+    "parent": "Data Analysis Libraries",
+    "grandparent": "Data & AI",
+    "aliases": ["polars library", "polars dataframe", "polars python"],
+    "implies": ["Python", "Data Analysis"],
+    "implies_at_proficiency": {
+      "Advanced": ["Lazy Evaluation"],
+      "Expert": ["Custom Expressions"]
+    }
+  },
+  "ETL Pipelines": {
+    "canonical": "ETL Pipelines",
+    "parent": "Data Engineering Practices",
+    "grandparent": "Data & AI",
+    "aliases": ["etl", "extract transform load", "data pipelines", "elt", "data integration"],
+    "implies": ["SQL", "Data Warehousing"],
+    "implies_at_proficiency": {
+      "Advanced": ["ELT Patterns", "Data Quality"],
+      "Expert": ["Pipeline Architecture"]
+    }
+  },
+  "Data Warehousing": {
+    "canonical": "Data Warehousing",
+    "parent": "Data Engineering Practices",
+    "grandparent": "Data & AI",
+    "aliases": ["data warehouse", "dw", "dwh", "enterprise data warehouse", "data warehousing concepts"],
+    "implies": ["SQL", "Data Modeling"],
+    "implies_at_proficiency": {
+      "Advanced": ["Dimensional Modeling", "Star Schema"],
+      "Expert": ["Data Vault", "Architecture Design"]
+    }
+  },
+  "Databricks": {
+    "canonical": "Databricks",
+    "parent": "Data Platforms",
+    "grandparent": "Data & AI",
+    "aliases": ["databricks platform", "databricks workspace", "delta lake"],
+    "implies": ["Apache Spark", "Python", "SQL"],
+    "implies_at_proficiency": {
+      "Advanced": ["Delta Lake", "MLflow"],
+      "Expert": ["Unity Catalog", "Platform Architecture"]
+    }
+  },
+  "Hadoop": {
+    "canonical": "Hadoop",
+    "parent": "Data Processing Frameworks",
+    "grandparent": "Data & AI",
+    "aliases": ["apache hadoop", "hadoop ecosystem", "hdfs", "mapreduce"],
+    "implies": ["Distributed Systems", "Big Data"],
+    "implies_at_proficiency": {
+      "Advanced": ["YARN", "Hive"],
+      "Expert": ["Hadoop Internals"]
+    }
+  },
+  "Flink": {
+    "canonical": "Flink",
+    "parent": "Data Streaming",
+    "grandparent": "Data & AI",
+    "aliases": ["apache flink", "flink streaming", "flink sql"],
+    "implies": ["Stream Processing", "Distributed Systems"],
+    "implies_at_proficiency": {
+      "Advanced": ["Stateful Processing", "Event Time"],
+      "Expert": ["Custom Connectors"]
+    }
+  },
+  "Great Expectations": {
+    "canonical": "Great Expectations",
+    "parent": "Data Quality",
+    "grandparent": "Data & AI",
+    "aliases": ["great expectations framework", "ge", "gx", "data quality tool"],
+    "implies": ["Python", "Data Quality"],
+    "implies_at_proficiency": {
+      "Advanced": ["Custom Expectations"],
+      "Expert": ["Plugin Development"]
+    }
+  },
+
+  "Docker": {
+    "canonical": "Docker",
+    "parent": "Containerization",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["docker container", "docker engine", "dockerfile", "docker compose", "docker-compose"],
+    "implies": ["Linux", "Containerization"],
+    "implies_at_proficiency": {
+      "Advanced": ["Multi-Stage Builds", "Docker Networking"],
+      "Expert": ["Container Runtime Internals", "Security Hardening"]
+    }
+  },
+  "Kubernetes": {
+    "canonical": "Kubernetes",
+    "parent": "Container Orchestration",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["k8s", "kube", "kubernetes cluster", "k8s orchestration"],
+    "implies": ["Docker", "DevOps"],
+    "implies_at_proficiency": {
+      "Advanced": ["Helm", "Operators", "Custom Resources"],
+      "Expert": ["Kubernetes Internals", "Multi-Cluster"]
+    }
+  },
+  "Terraform": {
+    "canonical": "Terraform",
+    "parent": "Infrastructure as Code",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["terraform iac", "tf", "hashicorp terraform", "hcl"],
+    "implies": ["Infrastructure as Code", "Cloud Computing"],
+    "implies_at_proficiency": {
+      "Advanced": ["Terraform Modules", "State Management"],
+      "Expert": ["Custom Providers", "Enterprise Architecture"]
+    }
+  },
+  "Ansible": {
+    "canonical": "Ansible",
+    "parent": "Configuration Management",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["ansible automation", "ansible playbook", "red hat ansible", "ansible tower"],
+    "implies": ["Linux", "Configuration Management"],
+    "implies_at_proficiency": {
+      "Advanced": ["Roles", "Ansible Galaxy"],
+      "Expert": ["Custom Modules", "Plugin Development"]
+    }
+  },
+  "Jenkins": {
+    "canonical": "Jenkins",
+    "parent": "CI/CD Tools",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["jenkins ci", "jenkins pipeline", "jenkins server", "jenkinsfile"],
+    "implies": ["CI/CD"],
+    "implies_at_proficiency": {
+      "Advanced": ["Pipeline as Code", "Shared Libraries"],
+      "Expert": ["Plugin Development", "Jenkins Administration"]
+    }
+  },
+  "GitHub Actions": {
+    "canonical": "GitHub Actions",
+    "parent": "CI/CD Tools",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["gh actions", "github ci", "github workflows", "gha"],
+    "implies": ["CI/CD", "Git", "GitHub"],
+    "implies_at_proficiency": {
+      "Advanced": ["Custom Actions", "Matrix Builds"],
+      "Expert": ["Self-Hosted Runners", "Reusable Workflows"]
+    }
+  },
+  "GitLab CI": {
+    "canonical": "GitLab CI",
+    "parent": "CI/CD Tools",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["gitlab ci/cd", "gitlab pipeline", "gitlab ci cd"],
+    "implies": ["CI/CD", "Git", "GitLab"],
+    "implies_at_proficiency": {
+      "Advanced": ["Multi-Project Pipelines"],
+      "Expert": ["Custom Runners"]
+    }
+  },
+  "CircleCI": {
+    "canonical": "CircleCI",
+    "parent": "CI/CD Tools",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["circle ci", "circleci pipeline"],
+    "implies": ["CI/CD"],
+    "implies_at_proficiency": {
+      "Advanced": ["Orbs"],
+      "Expert": ["Custom Orbs"]
+    }
+  },
+  "ArgoCD": {
+    "canonical": "ArgoCD",
+    "parent": "CI/CD Tools",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["argo cd", "argo cd gitops", "argocd gitops"],
+    "implies": ["Kubernetes", "GitOps", "CI/CD"],
+    "implies_at_proficiency": {
+      "Advanced": ["Application Sets"],
+      "Expert": ["Multi-Cluster Management"]
+    }
+  },
+  "Helm": {
+    "canonical": "Helm",
+    "parent": "Container Orchestration",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["helm charts", "helm package manager", "k8s helm"],
+    "implies": ["Kubernetes"],
+    "implies_at_proficiency": {
+      "Advanced": ["Chart Development", "Templating"],
+      "Expert": ["Custom Plugins"]
+    }
+  },
+  "Prometheus": {
+    "canonical": "Prometheus",
+    "parent": "Monitoring & Observability",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["prometheus monitoring", "prom", "prometheus metrics"],
+    "implies": ["Monitoring", "Metrics"],
+    "implies_at_proficiency": {
+      "Advanced": ["PromQL", "Alerting Rules"],
+      "Expert": ["Federation", "Custom Exporters"]
+    }
+  },
+  "Grafana": {
+    "canonical": "Grafana",
+    "parent": "Monitoring & Observability",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["grafana dashboards", "grafana monitoring", "grafana labs"],
+    "implies": ["Monitoring", "Data Visualization"],
+    "implies_at_proficiency": {
+      "Advanced": ["Custom Dashboards", "Alerting"],
+      "Expert": ["Plugin Development", "Grafana Stack"]
+    }
+  },
+  "ELK Stack": {
+    "canonical": "ELK Stack",
+    "parent": "Monitoring & Observability",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["elastic stack", "elasticsearch logstash kibana", "elk", "elastic observability"],
+    "implies": ["Elasticsearch", "Log Management"],
+    "implies_at_proficiency": {
+      "Advanced": ["Logstash Pipelines", "Kibana Dashboards"],
+      "Expert": ["Cluster Architecture"]
+    }
+  },
+  "Nginx": {
+    "canonical": "Nginx",
+    "parent": "Web Servers & Proxies",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["nginx server", "nginx proxy", "nginx web server", "nginx reverse proxy"],
+    "implies": ["Linux", "Web Server Administration"],
+    "implies_at_proficiency": {
+      "Advanced": ["Load Balancing", "SSL Termination"],
+      "Expert": ["Custom Modules", "Performance Tuning"]
+    }
+  },
+  "Istio": {
+    "canonical": "Istio",
+    "parent": "Service Mesh",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["istio mesh", "istio service mesh"],
+    "implies": ["Kubernetes", "Service Mesh", "Microservices"],
+    "implies_at_proficiency": {
+      "Advanced": ["Traffic Management", "mTLS"],
+      "Expert": ["Envoy Filters"]
+    }
+  },
+  "Service Mesh": {
+    "canonical": "Service Mesh",
+    "parent": "Networking",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["service mesh architecture", "sidecar proxy"],
+    "implies": ["Microservices", "Kubernetes"],
+    "implies_at_proficiency": {
+      "Advanced": ["Traffic Management"],
+      "Expert": ["Custom Control Plane"]
+    }
+  },
+
+  "AWS": {
+    "canonical": "AWS",
+    "parent": "Cloud Platforms",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["amazon web services", "amazon aws", "aws cloud"],
+    "implies": ["Cloud Computing"],
+    "implies_at_proficiency": {
+      "Advanced": ["Multi-Service Architecture", "IAM"],
+      "Expert": ["AWS Solutions Architecture", "Cost Optimization"]
+    }
+  },
+  "Azure": {
+    "canonical": "Azure",
+    "parent": "Cloud Platforms",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["microsoft azure", "azure cloud", "ms azure"],
+    "implies": ["Cloud Computing"],
+    "implies_at_proficiency": {
+      "Advanced": ["Azure Active Directory", "Azure DevOps"],
+      "Expert": ["Azure Solutions Architecture", "Cost Optimization"]
+    }
+  },
+  "GCP": {
+    "canonical": "GCP",
+    "parent": "Cloud Platforms",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["google cloud platform", "google cloud", "gcloud"],
+    "implies": ["Cloud Computing"],
+    "implies_at_proficiency": {
+      "Advanced": ["Multi-Service Architecture", "IAM"],
+      "Expert": ["GCP Solutions Architecture", "Cost Optimization"]
+    }
+  },
+  "AWS Lambda": {
+    "canonical": "AWS Lambda",
+    "parent": "Serverless Computing",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["lambda", "aws lambda functions", "lambda functions"],
+    "implies": ["AWS", "Serverless"],
+    "implies_at_proficiency": {
+      "Advanced": ["Cold Start Optimization", "Layers"],
+      "Expert": ["Custom Runtimes"]
+    }
+  },
+  "AWS EC2": {
+    "canonical": "AWS EC2",
+    "parent": "Compute Services",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["ec2", "elastic compute cloud", "aws ec2 instances"],
+    "implies": ["AWS", "Linux"],
+    "implies_at_proficiency": {
+      "Advanced": ["Auto Scaling", "Spot Instances"],
+      "Expert": ["Cost Optimization", "Custom AMIs"]
+    }
+  },
+  "AWS S3": {
+    "canonical": "AWS S3",
+    "parent": "Storage Services",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["s3", "simple storage service", "aws s3 bucket", "s3 storage"],
+    "implies": ["AWS"],
+    "implies_at_proficiency": {
+      "Advanced": ["Lifecycle Policies", "Cross-Region Replication"],
+      "Expert": ["Cost Optimization", "S3 Select"]
+    }
+  },
+  "AWS RDS": {
+    "canonical": "AWS RDS",
+    "parent": "Managed Database Services",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["rds", "relational database service", "aws rds database"],
+    "implies": ["AWS", "SQL", "Database Design"],
+    "implies_at_proficiency": {
+      "Advanced": ["Multi-AZ", "Read Replicas"],
+      "Expert": ["Aurora Internals", "Performance Insights"]
+    }
+  },
+  "AWS EKS": {
+    "canonical": "AWS EKS",
+    "parent": "Container Services",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["eks", "elastic kubernetes service", "aws kubernetes"],
+    "implies": ["AWS", "Kubernetes"],
+    "implies_at_proficiency": {
+      "Advanced": ["Fargate", "Node Groups"],
+      "Expert": ["Multi-Cluster", "Cost Optimization"]
+    }
+  },
+  "AWS SageMaker": {
+    "canonical": "AWS SageMaker",
+    "parent": "ML Services",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["sagemaker", "aws sagemaker ml", "amazon sagemaker"],
+    "implies": ["AWS", "Machine Learning", "Python"],
+    "implies_at_proficiency": {
+      "Advanced": ["Training Jobs", "Endpoints"],
+      "Expert": ["Custom Containers", "Pipeline Orchestration"]
+    }
+  },
+  "Azure DevOps": {
+    "canonical": "Azure DevOps",
+    "parent": "CI/CD Tools",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["ado", "azure devops services", "azure pipelines", "vsts"],
+    "implies": ["Azure", "CI/CD"],
+    "implies_at_proficiency": {
+      "Advanced": ["YAML Pipelines", "Release Management"],
+      "Expert": ["Custom Extensions"]
+    }
+  },
+  "Google Cloud Run": {
+    "canonical": "Google Cloud Run",
+    "parent": "Serverless Computing",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["cloud run", "gcp cloud run", "google cloud run service"],
+    "implies": ["GCP", "Docker", "Serverless"],
+    "implies_at_proficiency": {
+      "Advanced": ["Concurrency Tuning"],
+      "Expert": ["Custom Binary Deployments"]
+    }
+  },
+  "Serverless": {
+    "canonical": "Serverless",
+    "parent": "Cloud Architecture",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["serverless architecture", "serverless computing", "faas", "function as a service"],
+    "implies": ["Cloud Computing"],
+    "implies_at_proficiency": {
+      "Advanced": ["Event-Driven Architecture", "Cold Start Optimization"],
+      "Expert": ["Serverless Platform Design"]
+    }
+  },
+  "Infrastructure as Code": {
+    "canonical": "Infrastructure as Code",
+    "parent": "Cloud Architecture",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["iac", "infra as code", "infrastructure automation"],
+    "implies": ["Cloud Computing", "DevOps"],
+    "implies_at_proficiency": {
+      "Advanced": ["State Management", "Drift Detection"],
+      "Expert": ["Multi-Cloud IaC"]
+    }
+  },
+
+  "React Native": {
+    "canonical": "React Native",
+    "parent": "Cross-Platform Frameworks",
+    "grandparent": "Technical Skills",
+    "aliases": ["react-native", "rn", "react native framework"],
+    "implies": ["React", "JavaScript", "Mobile Development"],
+    "implies_at_proficiency": {
+      "Advanced": ["Native Modules", "Performance Optimization"],
+      "Expert": ["Bridge Architecture"]
+    }
+  },
+  "Flutter": {
+    "canonical": "Flutter",
+    "parent": "Cross-Platform Frameworks",
+    "grandparent": "Technical Skills",
+    "aliases": ["flutter framework", "flutter mobile", "google flutter"],
+    "implies": ["Dart", "Mobile Development"],
+    "implies_at_proficiency": {
+      "Advanced": ["Custom Widgets", "Platform Channels"],
+      "Expert": ["Flutter Engine Internals"]
+    }
+  },
+  "iOS Development": {
+    "canonical": "iOS Development",
+    "parent": "Native Mobile",
+    "grandparent": "Technical Skills",
+    "aliases": ["ios dev", "iphone development", "apple development", "ios app development"],
+    "implies": ["Swift", "Xcode"],
+    "implies_at_proficiency": {
+      "Advanced": ["Core Data", "ARKit"],
+      "Expert": ["App Store Optimization", "Performance Profiling"]
+    }
+  },
+  "Android Development": {
+    "canonical": "Android Development",
+    "parent": "Native Mobile",
+    "grandparent": "Technical Skills",
+    "aliases": ["android dev", "android app development", "android programming"],
+    "implies": ["Kotlin", "Android Studio"],
+    "implies_at_proficiency": {
+      "Advanced": ["Jetpack Libraries", "Room Database"],
+      "Expert": ["Custom Views", "Performance Profiling"]
+    }
+  },
+  "Expo": {
+    "canonical": "Expo",
+    "parent": "Cross-Platform Frameworks",
+    "grandparent": "Technical Skills",
+    "aliases": ["expo framework", "expo react native", "expo go"],
+    "implies": ["React Native", "JavaScript"],
+    "implies_at_proficiency": {
+      "Advanced": ["Custom Dev Clients"],
+      "Expert": ["EAS Build"]
+    }
+  },
+  "SwiftUI": {
+    "canonical": "SwiftUI",
+    "parent": "Native Mobile",
+    "grandparent": "Technical Skills",
+    "aliases": ["swift ui", "swiftui framework", "apple swiftui"],
+    "implies": ["Swift", "iOS Development"],
+    "implies_at_proficiency": {
+      "Advanced": ["Custom Modifiers", "Combine"],
+      "Expert": ["Custom Layouts"]
+    }
+  },
+  "Jetpack Compose": {
+    "canonical": "Jetpack Compose",
+    "parent": "Native Mobile",
+    "grandparent": "Technical Skills",
+    "aliases": ["compose", "android compose", "jetpack compose ui"],
+    "implies": ["Kotlin", "Android Development"],
+    "implies_at_proficiency": {
+      "Advanced": ["Custom Layouts", "Animations"],
+      "Expert": ["Compose Compiler Plugin"]
+    }
+  },
+
+  "OAuth 2.0": {
+    "canonical": "OAuth 2.0",
+    "parent": "Authentication & Authorization",
+    "grandparent": "Technical Skills",
+    "aliases": ["oauth", "oauth2", "oauth 2", "openid connect", "oidc"],
+    "implies": ["API Security", "Authentication"],
+    "implies_at_proficiency": {
+      "Advanced": ["PKCE", "Token Refresh"],
+      "Expert": ["Custom Grant Types"]
+    }
+  },
+  "JWT": {
+    "canonical": "JWT",
+    "parent": "Authentication & Authorization",
+    "grandparent": "Technical Skills",
+    "aliases": ["json web token", "json web tokens", "jwt auth", "jwt token"],
+    "implies": ["Authentication", "API Security"],
+    "implies_at_proficiency": {
+      "Advanced": ["Token Rotation"],
+      "Expert": ["Custom Claims"]
+    }
+  },
+  "OWASP": {
+    "canonical": "OWASP",
+    "parent": "Security Practices",
+    "grandparent": "Technical Skills",
+    "aliases": ["owasp top 10", "owasp security", "open web application security project"],
+    "implies": ["Security Auditing", "Web Security"],
+    "implies_at_proficiency": {
+      "Advanced": ["Threat Modeling"],
+      "Expert": ["Security Architecture"]
+    }
+  },
+  "Penetration Testing": {
+    "canonical": "Penetration Testing",
+    "parent": "Security Practices",
+    "grandparent": "Technical Skills",
+    "aliases": ["pen testing", "pentesting", "ethical hacking", "security testing"],
+    "implies": ["Security Auditing", "Networking"],
+    "implies_at_proficiency": {
+      "Advanced": ["Exploit Development"],
+      "Expert": ["Red Team Operations"]
+    }
+  },
+  "Security Auditing": {
+    "canonical": "Security Auditing",
+    "parent": "Security Practices",
+    "grandparent": "Technical Skills",
+    "aliases": ["security audit", "security assessment", "vulnerability assessment"],
+    "implies": ["OWASP"],
+    "implies_at_proficiency": {
+      "Advanced": ["Compliance Frameworks"],
+      "Expert": ["Security Architecture"]
+    }
+  },
+  "Encryption": {
+    "canonical": "Encryption",
+    "parent": "Security Practices",
+    "grandparent": "Technical Skills",
+    "aliases": ["data encryption", "cryptography", "encryption algorithms", "aes", "rsa"],
+    "implies": ["Security"],
+    "implies_at_proficiency": {
+      "Advanced": ["PKI", "Key Management"],
+      "Expert": ["Cryptographic Protocol Design"]
+    }
+  },
+  "RBAC": {
+    "canonical": "RBAC",
+    "parent": "Authentication & Authorization",
+    "grandparent": "Technical Skills",
+    "aliases": ["role-based access control", "role based access control", "rbac security"],
+    "implies": ["Authentication", "Authorization"],
+    "implies_at_proficiency": {
+      "Advanced": ["ABAC", "Policy Engines"],
+      "Expert": ["Custom Access Control Systems"]
+    }
+  },
+  "Zero Trust": {
+    "canonical": "Zero Trust",
+    "parent": "Security Architecture",
+    "grandparent": "Technical Skills",
+    "aliases": ["zero trust architecture", "zero trust security", "ztna"],
+    "implies": ["Security", "Networking"],
+    "implies_at_proficiency": {
+      "Advanced": ["Identity-Aware Proxy"],
+      "Expert": ["Zero Trust Network Design"]
+    }
+  },
+  "API Security": {
+    "canonical": "API Security",
+    "parent": "Security Practices",
+    "grandparent": "Technical Skills",
+    "aliases": ["api security best practices", "secure api design"],
+    "implies": ["REST API design", "Authentication"],
+    "implies_at_proficiency": {
+      "Advanced": ["Rate Limiting", "Input Validation"],
+      "Expert": ["API Threat Modeling"]
+    }
+  },
+  "SSL/TLS": {
+    "canonical": "SSL/TLS",
+    "parent": "Security Practices",
+    "grandparent": "Technical Skills",
+    "aliases": ["ssl", "tls", "https", "ssl certificates", "tls certificates", "ssl/tls encryption"],
+    "implies": ["Encryption", "Networking"],
+    "implies_at_proficiency": {
+      "Advanced": ["Certificate Management"],
+      "Expert": ["Protocol Analysis"]
+    }
+  },
+
+  "Git": {
+    "canonical": "Git",
+    "parent": "Version Control",
+    "grandparent": "Technical Skills",
+    "aliases": ["git vcs", "git version control", "git scm"],
+    "implies": ["Version Control"],
+    "implies_at_proficiency": {
+      "Advanced": ["Rebase Workflows", "Git Hooks"],
+      "Expert": ["Git Internals"]
+    }
+  },
+  "GitHub": {
+    "canonical": "GitHub",
+    "parent": "Development Platforms",
+    "grandparent": "Technical Skills",
+    "aliases": ["github platform", "gh", "github.com"],
+    "implies": ["Git"],
+    "implies_at_proficiency": {
+      "Advanced": ["GitHub Actions", "Pull Request Workflows"],
+      "Expert": ["GitHub API", "GitHub Apps"]
+    }
+  },
+  "GitLab": {
+    "canonical": "GitLab",
+    "parent": "Development Platforms",
+    "grandparent": "Technical Skills",
+    "aliases": ["gitlab platform", "gitlab.com", "gitlab self-hosted"],
+    "implies": ["Git"],
+    "implies_at_proficiency": {
+      "Advanced": ["GitLab CI", "Merge Request Workflows"],
+      "Expert": ["GitLab API", "GitLab Administration"]
+    }
+  },
+  "Jira": {
+    "canonical": "Jira",
+    "parent": "Project Management Tools",
+    "grandparent": "Technical Skills",
+    "aliases": ["jira software", "atlassian jira", "jira board", "jira project management"],
+    "implies": ["Agile", "Project Management"],
+    "implies_at_proficiency": {
+      "Advanced": ["JQL", "Automation Rules"],
+      "Expert": ["Jira Administration"]
+    }
+  },
+  "Confluence": {
+    "canonical": "Confluence",
+    "parent": "Documentation Tools",
+    "grandparent": "Technical Skills",
+    "aliases": ["atlassian confluence", "confluence wiki"],
+    "implies": ["Technical Writing"],
+    "implies_at_proficiency": {}
+  },
+  "Postman": {
+    "canonical": "Postman",
+    "parent": "API Tools",
+    "grandparent": "Technical Skills",
+    "aliases": ["postman api", "postman tool", "postman client"],
+    "implies": ["REST API consumption", "API Testing"],
+    "implies_at_proficiency": {
+      "Advanced": ["Newman", "Collection Runner"],
+      "Expert": ["Postman Flows"]
+    }
+  },
+  "Swagger/OpenAPI": {
+    "canonical": "Swagger/OpenAPI",
+    "parent": "API Tools",
+    "grandparent": "Technical Skills",
+    "aliases": ["swagger", "openapi", "openapi spec", "swagger docs", "openapi 3.0"],
+    "implies": ["REST API design", "API Documentation"],
+    "implies_at_proficiency": {
+      "Advanced": ["Code Generation"],
+      "Expert": ["Custom Generators"]
+    }
+  },
+  "Unit Testing": {
+    "canonical": "Unit Testing",
+    "parent": "Testing",
+    "grandparent": "Technical Skills",
+    "aliases": ["unit tests", "unit test", "jest", "pytest", "junit", "xunit", "nunit"],
+    "implies": ["Testing", "Clean Code"],
+    "implies_at_proficiency": {
+      "Advanced": ["Mocking", "Test Design Patterns"],
+      "Expert": ["Test Architecture"]
+    }
+  },
+  "Integration Testing": {
+    "canonical": "Integration Testing",
+    "parent": "Testing",
+    "grandparent": "Technical Skills",
+    "aliases": ["integration tests", "integration test", "api testing"],
+    "implies": ["Testing"],
+    "implies_at_proficiency": {
+      "Advanced": ["Test Containers"],
+      "Expert": ["Contract Testing"]
+    }
+  },
+  "E2E Testing": {
+    "canonical": "E2E Testing",
+    "parent": "Testing",
+    "grandparent": "Technical Skills",
+    "aliases": ["end-to-end testing", "e2e tests", "cypress", "playwright", "selenium"],
+    "implies": ["Testing"],
+    "implies_at_proficiency": {
+      "Advanced": ["Visual Regression Testing"],
+      "Expert": ["Test Framework Architecture"]
+    }
+  },
+  "TDD": {
+    "canonical": "TDD",
+    "parent": "Development Practices",
+    "grandparent": "Technical Skills",
+    "aliases": ["test driven development", "test-driven development"],
+    "implies": ["Unit Testing", "Clean Code"],
+    "implies_at_proficiency": {
+      "Advanced": ["BDD"],
+      "Expert": ["Test Architecture"]
+    }
+  },
+  "Code Review": {
+    "canonical": "Code Review",
+    "parent": "Development Practices",
+    "grandparent": "Technical Skills",
+    "aliases": ["peer review", "pull request review", "cr", "code review process"],
+    "implies": ["Git", "Clean Code"],
+    "implies_at_proficiency": {
+      "Advanced": ["Code Review Guidelines"],
+      "Expert": ["Engineering Standards"]
+    }
+  },
+  "Agile": {
+    "canonical": "Agile",
+    "parent": "Development Methodologies",
+    "grandparent": "Management",
+    "aliases": ["agile methodology", "agile development", "agile process", "agile framework"],
+    "implies": ["Project Management"],
+    "implies_at_proficiency": {
+      "Advanced": ["Sprint Planning", "Retrospectives"],
+      "Expert": ["Agile Transformation", "SAFe"]
+    }
+  },
+  "Scrum": {
+    "canonical": "Scrum",
+    "parent": "Development Methodologies",
+    "grandparent": "Management",
+    "aliases": ["scrum methodology", "scrum framework", "scrum master", "scrum process"],
+    "implies": ["Agile", "Project Management"],
+    "implies_at_proficiency": {
+      "Advanced": ["Sprint Facilitation"],
+      "Expert": ["Scrum at Scale"]
+    }
+  },
+  "CI/CD": {
+    "canonical": "CI/CD",
+    "parent": "Development Practices",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["continuous integration", "continuous deployment", "continuous delivery", "ci cd", "ci/cd pipeline"],
+    "implies": ["Git", "DevOps"],
+    "implies_at_proficiency": {
+      "Advanced": ["Pipeline Design", "Deployment Strategies"],
+      "Expert": ["Release Engineering"]
+    }
+  },
+  "System Design": {
+    "canonical": "System Design",
+    "parent": "Architecture",
+    "grandparent": "Technical Skills",
+    "aliases": ["system architecture", "systems design", "software architecture", "high-level design"],
+    "implies": ["Software Engineering"],
+    "implies_at_proficiency": {
+      "Advanced": ["Distributed Systems", "Scalability"],
+      "Expert": ["Enterprise Architecture"]
+    }
+  },
+  "Microservices": {
+    "canonical": "Microservices",
+    "parent": "Architecture",
+    "grandparent": "Technical Skills",
+    "aliases": ["microservice architecture", "microservices architecture", "micro services"],
+    "implies": ["System Design", "REST API design"],
+    "implies_at_proficiency": {
+      "Advanced": ["Service Discovery", "API Gateway"],
+      "Expert": ["Distributed Tracing", "Saga Pattern"]
+    }
+  },
+  "Event-Driven Architecture": {
+    "canonical": "Event-Driven Architecture",
+    "parent": "Architecture",
+    "grandparent": "Technical Skills",
+    "aliases": ["eda", "event driven design", "event sourcing", "cqrs"],
+    "implies": ["System Design"],
+    "implies_at_proficiency": {
+      "Advanced": ["Event Sourcing", "CQRS"],
+      "Expert": ["Distributed Event Systems"]
+    }
+  },
+  "Domain-Driven Design": {
+    "canonical": "Domain-Driven Design",
+    "parent": "Architecture",
+    "grandparent": "Technical Skills",
+    "aliases": ["ddd", "domain driven design", "domain modeling"],
+    "implies": ["System Design", "Object-Oriented Programming"],
+    "implies_at_proficiency": {
+      "Advanced": ["Bounded Contexts", "Aggregates"],
+      "Expert": ["Strategic DDD"]
+    }
+  },
+  "Clean Code": {
+    "canonical": "Clean Code",
+    "parent": "Development Practices",
+    "grandparent": "Technical Skills",
+    "aliases": ["clean coding", "code quality", "readable code", "maintainable code", "solid principles"],
+    "implies": ["Software Engineering"],
+    "implies_at_proficiency": {
+      "Advanced": ["Refactoring", "Design Patterns"],
+      "Expert": ["Engineering Standards"]
+    }
+  },
+
+  "Figma": {
+    "canonical": "Figma",
+    "parent": "Design Tools",
+    "grandparent": "Design",
+    "aliases": ["figma design", "figma tool", "figma app"],
+    "implies": ["UI Design", "Prototyping"],
+    "implies_at_proficiency": {
+      "Advanced": ["Design Systems", "Auto Layout"],
+      "Expert": ["Figma Plugin Development"]
+    }
+  },
+  "Sketch": {
+    "canonical": "Sketch",
+    "parent": "Design Tools",
+    "grandparent": "Design",
+    "aliases": ["sketch app", "sketch design", "bohemian sketch"],
+    "implies": ["UI Design", "Prototyping"],
+    "implies_at_proficiency": {
+      "Advanced": ["Symbols", "Libraries"],
+      "Expert": ["Plugin Development"]
+    }
+  },
+  "Adobe XD": {
+    "canonical": "Adobe XD",
+    "parent": "Design Tools",
+    "grandparent": "Design",
+    "aliases": ["xd", "adobe experience design"],
+    "implies": ["UI Design", "Prototyping"],
+    "implies_at_proficiency": {
+      "Advanced": ["Auto Animate"],
+      "Expert": ["Plugin Development"]
+    }
+  },
+  "UI Design": {
+    "canonical": "UI Design",
+    "parent": "Design Disciplines",
+    "grandparent": "Design",
+    "aliases": ["user interface design", "visual design", "ui/ux design", "interface design"],
+    "implies": ["Design Thinking", "Typography"],
+    "implies_at_proficiency": {
+      "Advanced": ["Design Systems", "Component Design"],
+      "Expert": ["Design Leadership"]
+    }
+  },
+  "UX Design": {
+    "canonical": "UX Design",
+    "parent": "Design Disciplines",
+    "grandparent": "Design",
+    "aliases": ["user experience design", "ux", "ux/ui", "experience design"],
+    "implies": ["User Research", "Wireframing"],
+    "implies_at_proficiency": {
+      "Advanced": ["Usability Testing", "Information Architecture"],
+      "Expert": ["UX Strategy"]
+    }
+  },
+  "User Research": {
+    "canonical": "User Research",
+    "parent": "Design Disciplines",
+    "grandparent": "Design",
+    "aliases": ["ux research", "user testing", "usability research", "design research"],
+    "implies": ["UX Design"],
+    "implies_at_proficiency": {
+      "Advanced": ["A/B Testing", "Survey Design"],
+      "Expert": ["Research Strategy"]
+    }
+  },
+  "Wireframing": {
+    "canonical": "Wireframing",
+    "parent": "Design Practices",
+    "grandparent": "Design",
+    "aliases": ["wireframes", "wireframe design", "lo-fi wireframes"],
+    "implies": ["UX Design"],
+    "implies_at_proficiency": {}
+  },
+  "Prototyping": {
+    "canonical": "Prototyping",
+    "parent": "Design Practices",
+    "grandparent": "Design",
+    "aliases": ["prototype design", "interactive prototypes", "hi-fi prototypes"],
+    "implies": ["UI Design", "Wireframing"],
+    "implies_at_proficiency": {
+      "Advanced": ["Micro-Interactions"],
+      "Expert": ["Design System Prototyping"]
+    }
+  },
+  "Design Systems": {
+    "canonical": "Design Systems",
+    "parent": "Design Practices",
+    "grandparent": "Design",
+    "aliases": ["design system", "component library", "design tokens", "style guide"],
+    "implies": ["UI Design", "CSS"],
+    "implies_at_proficiency": {
+      "Advanced": ["Token Architecture"],
+      "Expert": ["Design System Governance"]
+    }
+  },
+  "Accessibility (a11y)": {
+    "canonical": "Accessibility (a11y)",
+    "parent": "Design Practices",
+    "grandparent": "Design",
+    "aliases": ["accessibility", "a11y", "wcag", "web accessibility", "ada compliance"],
+    "implies": ["HTML", "CSS"],
+    "implies_at_proficiency": {
+      "Advanced": ["ARIA", "Screen Reader Testing"],
+      "Expert": ["WCAG Compliance Strategy"]
+    }
+  },
+  "Responsive Design": {
+    "canonical": "Responsive Design",
+    "parent": "Design Practices",
+    "grandparent": "Design",
+    "aliases": ["responsive web design", "rwd", "mobile-first design", "adaptive design"],
+    "implies": ["CSS", "HTML"],
+    "implies_at_proficiency": {
+      "Advanced": ["CSS Grid", "Container Queries"],
+      "Expert": ["Cross-Platform Responsive Strategy"]
+    }
+  },
+
+  "Product Management": {
+    "canonical": "Product Management",
+    "parent": "Product Leadership",
+    "grandparent": "Product",
+    "aliases": ["product manager", "pm", "product management skills", "product strategy"],
+    "implies": ["Stakeholder Management", "Roadmapping"],
+    "implies_at_proficiency": {
+      "Advanced": ["Go-To-Market Strategy"],
+      "Expert": ["Product Vision", "Portfolio Management"]
+    }
+  },
+  "Roadmapping": {
+    "canonical": "Roadmapping",
+    "parent": "Product Practices",
+    "grandparent": "Product",
+    "aliases": ["product roadmap", "roadmap planning", "strategic roadmapping"],
+    "implies": ["Product Management"],
+    "implies_at_proficiency": {
+      "Advanced": ["Quarterly Planning"],
+      "Expert": ["Multi-Year Strategy"]
+    }
+  },
+  "Stakeholder Management": {
+    "canonical": "Stakeholder Management",
+    "parent": "Product Practices",
+    "grandparent": "Product",
+    "aliases": ["stakeholder engagement", "stakeholder communication", "managing stakeholders"],
+    "implies": ["Communication"],
+    "implies_at_proficiency": {
+      "Advanced": ["Executive Communication"],
+      "Expert": ["Board-Level Presentations"]
+    }
+  },
+  "OKRs": {
+    "canonical": "OKRs",
+    "parent": "Product Practices",
+    "grandparent": "Product",
+    "aliases": ["objectives and key results", "okr framework", "okr methodology"],
+    "implies": ["Goal Setting", "Product Management"],
+    "implies_at_proficiency": {
+      "Advanced": ["OKR Alignment"],
+      "Expert": ["Company-Wide OKR Programs"]
+    }
+  },
+  "A/B Testing": {
+    "canonical": "A/B Testing",
+    "parent": "Experimentation",
+    "grandparent": "Product",
+    "aliases": ["ab testing", "split testing", "multivariate testing", "a/b experimentation"],
+    "implies": ["Analytics", "Statistics"],
+    "implies_at_proficiency": {
+      "Advanced": ["Multi-Armed Bandits"],
+      "Expert": ["Experimentation Platform Design"]
+    }
+  },
+  "Analytics": {
+    "canonical": "Analytics",
+    "parent": "Data & Insights",
+    "grandparent": "Product",
+    "aliases": ["data analytics", "web analytics", "product analytics", "google analytics"],
+    "implies": ["SQL (for analytics)", "Data Analysis"],
+    "implies_at_proficiency": {
+      "Advanced": ["Funnel Analysis", "Cohort Analysis"],
+      "Expert": ["Analytics Architecture"]
+    }
+  },
+  "SQL (for analytics)": {
+    "canonical": "SQL (for analytics)",
+    "parent": "Data & Insights",
+    "grandparent": "Product",
+    "aliases": ["sql", "sql analytics", "data sql", "sql queries", "structured query language"],
+    "implies": ["Data Analysis"],
+    "implies_at_proficiency": {
+      "Advanced": ["Window Functions", "CTEs"],
+      "Expert": ["Query Optimization"]
+    }
+  },
+  "Tableau": {
+    "canonical": "Tableau",
+    "parent": "Business Intelligence",
+    "grandparent": "Product",
+    "aliases": ["tableau software", "tableau desktop", "tableau dashboards", "tableau viz"],
+    "implies": ["Data Visualization", "SQL (for analytics)"],
+    "implies_at_proficiency": {
+      "Advanced": ["Calculated Fields", "LOD Expressions"],
+      "Expert": ["Tableau Server Administration"]
+    }
+  },
+  "Power BI": {
+    "canonical": "Power BI",
+    "parent": "Business Intelligence",
+    "grandparent": "Product",
+    "aliases": ["powerbi", "microsoft power bi", "power bi dashboards", "pbi"],
+    "implies": ["Data Visualization", "SQL (for analytics)"],
+    "implies_at_proficiency": {
+      "Advanced": ["DAX", "Power Query"],
+      "Expert": ["Power BI Administration"]
+    }
+  },
+  "Looker": {
+    "canonical": "Looker",
+    "parent": "Business Intelligence",
+    "grandparent": "Product",
+    "aliases": ["google looker", "looker studio", "lookml"],
+    "implies": ["Data Visualization", "SQL (for analytics)"],
+    "implies_at_proficiency": {
+      "Advanced": ["LookML"],
+      "Expert": ["Looker Administration"]
+    }
+  },
+
+  "Communication": {
+    "canonical": "Communication",
+    "parent": "Interpersonal Skills",
+    "grandparent": "Soft Skills",
+    "aliases": ["communication skills", "verbal communication", "written communication", "effective communication"],
+    "implies": [],
+    "implies_at_proficiency": {
+      "Advanced": ["Executive Communication"],
+      "Expert": ["Organizational Communication Strategy"]
+    }
+  },
+  "Leadership": {
+    "canonical": "Leadership",
+    "parent": "Interpersonal Skills",
+    "grandparent": "Soft Skills",
+    "aliases": ["leadership skills", "team leadership", "tech leadership", "engineering leadership"],
+    "implies": ["Communication", "Mentoring"],
+    "implies_at_proficiency": {
+      "Advanced": ["People Management"],
+      "Expert": ["Organizational Leadership"]
+    }
+  },
+  "Mentoring": {
+    "canonical": "Mentoring",
+    "parent": "Interpersonal Skills",
+    "grandparent": "Soft Skills",
+    "aliases": ["mentorship", "coaching", "technical mentoring", "peer mentoring"],
+    "implies": ["Communication"],
+    "implies_at_proficiency": {
+      "Advanced": ["Career Development Programs"],
+      "Expert": ["Mentoring Programs at Scale"]
+    }
+  },
+  "Problem Solving": {
+    "canonical": "Problem Solving",
+    "parent": "Cognitive Skills",
+    "grandparent": "Soft Skills",
+    "aliases": ["problem-solving", "analytical thinking", "troubleshooting", "root cause analysis"],
+    "implies": ["Critical Thinking"],
+    "implies_at_proficiency": {}
+  },
+  "Critical Thinking": {
+    "canonical": "Critical Thinking",
+    "parent": "Cognitive Skills",
+    "grandparent": "Soft Skills",
+    "aliases": ["critical analysis", "logical thinking", "analytical reasoning"],
+    "implies": [],
+    "implies_at_proficiency": {}
+  },
+  "Team Collaboration": {
+    "canonical": "Team Collaboration",
+    "parent": "Interpersonal Skills",
+    "grandparent": "Soft Skills",
+    "aliases": ["teamwork", "cross-functional collaboration", "collaborative work", "team player"],
+    "implies": ["Communication"],
+    "implies_at_proficiency": {
+      "Advanced": ["Cross-Team Coordination"],
+      "Expert": ["Organizational Collaboration Strategy"]
+    }
+  },
+  "Project Management": {
+    "canonical": "Project Management",
+    "parent": "Management Practices",
+    "grandparent": "Management",
+    "aliases": ["project management skills", "pmp", "program management", "project coordination"],
+    "implies": ["Communication", "Time Management"],
+    "implies_at_proficiency": {
+      "Advanced": ["Risk Management", "Resource Allocation"],
+      "Expert": ["Portfolio Management"]
+    }
+  },
+  "Time Management": {
+    "canonical": "Time Management",
+    "parent": "Personal Effectiveness",
+    "grandparent": "Soft Skills",
+    "aliases": ["time management skills", "prioritization", "task management"],
+    "implies": [],
+    "implies_at_proficiency": {}
+  },
+  "Technical Writing": {
+    "canonical": "Technical Writing",
+    "parent": "Communication Skills",
+    "grandparent": "Soft Skills",
+    "aliases": ["tech writing", "documentation writing", "technical documentation", "api documentation"],
+    "implies": ["Communication"],
+    "implies_at_proficiency": {
+      "Advanced": ["Documentation Architecture"],
+      "Expert": ["Developer Experience"]
+    }
+  },
+  "Public Speaking": {
+    "canonical": "Public Speaking",
+    "parent": "Communication Skills",
+    "grandparent": "Soft Skills",
+    "aliases": ["presentations", "conference speaking", "tech talks", "keynote speaking"],
+    "implies": ["Communication"],
+    "implies_at_proficiency": {
+      "Advanced": ["Conference Presentations"],
+      "Expert": ["Keynote Speaking"]
+    }
+  },
+
+  "DevOps": {
+    "canonical": "DevOps",
+    "parent": "Engineering Practices",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["devops practices", "devops engineering", "dev ops", "devops culture"],
+    "implies": ["CI/CD", "Linux"],
+    "implies_at_proficiency": {
+      "Advanced": ["Infrastructure as Code", "Monitoring"],
+      "Expert": ["Platform Engineering"]
+    }
+  },
+  "Mobile Development": {
+    "canonical": "Mobile Development",
+    "parent": "Mobile Engineering",
+    "grandparent": "Technical Skills",
+    "aliases": ["mobile dev", "mobile app development", "mobile engineering"],
+    "implies": [],
+    "implies_at_proficiency": {
+      "Advanced": ["Push Notifications", "Offline First"],
+      "Expert": ["Mobile Architecture"]
+    }
+  },
+
+  "Object-Oriented Programming": {
+    "canonical": "Object-Oriented Programming",
+    "parent": "Programming Paradigms",
+    "grandparent": "Technical Skills",
+    "aliases": ["oop", "object oriented programming", "oops", "oo design"],
+    "implies": [],
+    "implies_at_proficiency": {
+      "Advanced": ["Design Patterns"],
+      "Expert": ["Software Architecture Patterns"]
+    }
+  },
+  "Functional Programming": {
+    "canonical": "Functional Programming",
+    "parent": "Programming Paradigms",
+    "grandparent": "Technical Skills",
+    "aliases": ["fp", "functional programming paradigm"],
+    "implies": [],
+    "implies_at_proficiency": {
+      "Advanced": ["Monads", "Category Theory"],
+      "Expert": ["Type-Level Programming"]
+    }
+  },
+  "Scripting": {
+    "canonical": "Scripting",
+    "parent": "Programming Paradigms",
+    "grandparent": "Technical Skills",
+    "aliases": ["script writing", "automation scripting"],
+    "implies": [],
+    "implies_at_proficiency": {}
+  },
+  "Systems Programming": {
+    "canonical": "Systems Programming",
+    "parent": "Programming Paradigms",
+    "grandparent": "Technical Skills",
+    "aliases": ["systems level programming", "low-level programming"],
+    "implies": ["Memory Management"],
+    "implies_at_proficiency": {}
+  },
+  "Concurrency": {
+    "canonical": "Concurrency",
+    "parent": "Programming Concepts",
+    "grandparent": "Technical Skills",
+    "aliases": ["concurrent programming", "multithreading", "parallelism", "parallel programming"],
+    "implies": [],
+    "implies_at_proficiency": {}
+  },
+  "Asynchronous Programming": {
+    "canonical": "Asynchronous Programming",
+    "parent": "Programming Concepts",
+    "grandparent": "Technical Skills",
+    "aliases": ["async programming", "async/await", "event loop programming"],
+    "implies": [],
+    "implies_at_proficiency": {}
+  },
+  "Memory Management": {
+    "canonical": "Memory Management",
+    "parent": "Programming Concepts",
+    "grandparent": "Technical Skills",
+    "aliases": ["memory allocation", "garbage collection", "manual memory management"],
+    "implies": [],
+    "implies_at_proficiency": {}
+  },
+  "Static Typing": {
+    "canonical": "Static Typing",
+    "parent": "Programming Concepts",
+    "grandparent": "Technical Skills",
+    "aliases": ["static type checking", "type safety"],
+    "implies": [],
+    "implies_at_proficiency": {}
+  },
+  "Design Patterns": {
+    "canonical": "Design Patterns",
+    "parent": "Software Engineering Principles",
+    "grandparent": "Technical Skills",
+    "aliases": ["software design patterns", "gang of four", "gof patterns", "creational patterns", "behavioral patterns"],
+    "implies": ["Object-Oriented Programming"],
+    "implies_at_proficiency": {}
+  },
+  "Software Architecture Patterns": {
+    "canonical": "Software Architecture Patterns",
+    "parent": "Architecture",
+    "grandparent": "Technical Skills",
+    "aliases": ["architectural patterns", "software architecture"],
+    "implies": ["System Design"],
+    "implies_at_proficiency": {}
+  },
+  "Performance Optimisation": {
+    "canonical": "Performance Optimisation",
+    "parent": "Software Engineering Principles",
+    "grandparent": "Technical Skills",
+    "aliases": ["performance optimization", "performance tuning", "code optimization"],
+    "implies": [],
+    "implies_at_proficiency": {}
+  },
+  "Software Engineering": {
+    "canonical": "Software Engineering",
+    "parent": "Engineering Practices",
+    "grandparent": "Technical Skills",
+    "aliases": ["software development", "software eng", "swe"],
+    "implies": ["Clean Code", "Git"],
+    "implies_at_proficiency": {}
+  },
+
+  "Web Development": {
+    "canonical": "Web Development",
+    "parent": "Engineering Practices",
+    "grandparent": "Technical Skills",
+    "aliases": ["web dev", "full stack web", "web application development"],
+    "implies": ["HTML", "CSS", "JavaScript"],
+    "implies_at_proficiency": {}
+  },
+  "State Management": {
+    "canonical": "State Management",
+    "parent": "Frontend Concepts",
+    "grandparent": "Technical Skills",
+    "aliases": ["state management patterns", "global state"],
+    "implies": ["JavaScript"],
+    "implies_at_proficiency": {}
+  },
+  "GraphQL": {
+    "canonical": "GraphQL",
+    "parent": "API Technologies",
+    "grandparent": "Technical Skills",
+    "aliases": ["graph ql", "graphql api technology"],
+    "implies": ["API Design"],
+    "implies_at_proficiency": {}
+  },
+  "HTTP": {
+    "canonical": "HTTP",
+    "parent": "Web Fundamentals",
+    "grandparent": "Technical Skills",
+    "aliases": ["http protocol", "http/2", "http/3"],
+    "implies": ["Networking"],
+    "implies_at_proficiency": {}
+  },
+  "JSON": {
+    "canonical": "JSON",
+    "parent": "Data Formats",
+    "grandparent": "Technical Skills",
+    "aliases": ["javascript object notation", "json format"],
+    "implies": [],
+    "implies_at_proficiency": {}
+  },
+  "Protocol Buffers": {
+    "canonical": "Protocol Buffers",
+    "parent": "Data Formats",
+    "grandparent": "Technical Skills",
+    "aliases": ["protobuf", "proto", "google protocol buffers"],
+    "implies": [],
+    "implies_at_proficiency": {}
+  },
+  "WebGL": {
+    "canonical": "WebGL",
+    "parent": "Graphics & Visualization",
+    "grandparent": "Technical Skills",
+    "aliases": ["webgl api", "web graphics library"],
+    "implies": ["JavaScript", "3D Graphics"],
+    "implies_at_proficiency": {}
+  },
+  "SVG": {
+    "canonical": "SVG",
+    "parent": "Graphics & Visualization",
+    "grandparent": "Technical Skills",
+    "aliases": ["scalable vector graphics", "svg graphics"],
+    "implies": ["HTML"],
+    "implies_at_proficiency": {}
+  },
+  "3D Graphics": {
+    "canonical": "3D Graphics",
+    "parent": "Graphics & Visualization",
+    "grandparent": "Technical Skills",
+    "aliases": ["3d rendering", "3d visualization"],
+    "implies": [],
+    "implies_at_proficiency": {}
+  },
+  "Real-Time Communication": {
+    "canonical": "Real-Time Communication",
+    "parent": "Real-Time Technologies",
+    "grandparent": "Technical Skills",
+    "aliases": ["real-time messaging", "real-time systems"],
+    "implies": [],
+    "implies_at_proficiency": {}
+  },
+
+  "SQL": {
+    "canonical": "SQL",
+    "parent": "Database Languages",
+    "grandparent": "Technical Skills",
+    "aliases": ["structured query language", "sql queries", "sql programming"],
+    "implies": ["Database Design"],
+    "implies_at_proficiency": {
+      "Advanced": ["Query Optimization", "Window Functions"],
+      "Expert": ["Database Architecture"]
+    }
+  },
+  "Database Design": {
+    "canonical": "Database Design",
+    "parent": "Database Concepts",
+    "grandparent": "Technical Skills",
+    "aliases": ["db design", "schema design", "data modeling", "database modeling"],
+    "implies": ["SQL"],
+    "implies_at_proficiency": {}
+  },
+  "NoSQL": {
+    "canonical": "NoSQL",
+    "parent": "Database Concepts",
+    "grandparent": "Technical Skills",
+    "aliases": ["nosql databases", "non-relational databases"],
+    "implies": [],
+    "implies_at_proficiency": {}
+  },
+  "Caching": {
+    "canonical": "Caching",
+    "parent": "Database Concepts",
+    "grandparent": "Technical Skills",
+    "aliases": ["cache strategies", "caching strategies", "in-memory cache"],
+    "implies": [],
+    "implies_at_proficiency": {}
+  },
+  "Full-Text Search": {
+    "canonical": "Full-Text Search",
+    "parent": "Search Technologies",
+    "grandparent": "Technical Skills",
+    "aliases": ["text search", "search engine", "full text search"],
+    "implies": [],
+    "implies_at_proficiency": {}
+  },
+
+  "Statistics": {
+    "canonical": "Statistics",
+    "parent": "Mathematical Foundations",
+    "grandparent": "Data & AI",
+    "aliases": ["statistical analysis", "statistical methods", "statistics fundamentals"],
+    "implies": [],
+    "implies_at_proficiency": {
+      "Advanced": ["Bayesian Statistics", "Hypothesis Testing"],
+      "Expert": ["Experimental Design"]
+    }
+  },
+  "Linear Algebra": {
+    "canonical": "Linear Algebra",
+    "parent": "Mathematical Foundations",
+    "grandparent": "Data & AI",
+    "aliases": ["linear algebra fundamentals", "matrix operations", "vector spaces"],
+    "implies": [],
+    "implies_at_proficiency": {}
+  },
+  "Data Analysis": {
+    "canonical": "Data Analysis",
+    "parent": "Data Science Practices",
+    "grandparent": "Data & AI",
+    "aliases": ["data analytics", "data exploration", "exploratory data analysis", "eda"],
+    "implies": ["Statistics"],
+    "implies_at_proficiency": {}
+  },
+  "Data Visualization": {
+    "canonical": "Data Visualization",
+    "parent": "Data Science Practices",
+    "grandparent": "Data & AI",
+    "aliases": ["data viz", "data visualisation", "charts", "dashboards"],
+    "implies": [],
+    "implies_at_proficiency": {}
+  },
+  "Data Modeling": {
+    "canonical": "Data Modeling",
+    "parent": "Data Engineering Practices",
+    "grandparent": "Data & AI",
+    "aliases": ["data modelling", "conceptual modeling", "logical modeling", "physical modeling"],
+    "implies": ["SQL"],
+    "implies_at_proficiency": {}
+  },
+  "Big Data": {
+    "canonical": "Big Data",
+    "parent": "Data Engineering Practices",
+    "grandparent": "Data & AI",
+    "aliases": ["big data technologies", "large scale data processing"],
+    "implies": ["Distributed Systems"],
+    "implies_at_proficiency": {}
+  },
+  "Stream Processing": {
+    "canonical": "Stream Processing",
+    "parent": "Data Engineering Practices",
+    "grandparent": "Data & AI",
+    "aliases": ["real-time data processing", "streaming data"],
+    "implies": ["Distributed Systems"],
+    "implies_at_proficiency": {}
+  },
+  "Data Quality": {
+    "canonical": "Data Quality",
+    "parent": "Data Engineering Practices",
+    "grandparent": "Data & AI",
+    "aliases": ["data quality management", "data validation", "data integrity"],
+    "implies": [],
+    "implies_at_proficiency": {}
+  },
+  "Experiment Tracking": {
+    "canonical": "Experiment Tracking",
+    "parent": "ML Infrastructure",
+    "grandparent": "Data & AI",
+    "aliases": ["ml experiment tracking", "experiment management"],
+    "implies": ["Machine Learning"],
+    "implies_at_proficiency": {}
+  },
+  "Embeddings": {
+    "canonical": "Embeddings",
+    "parent": "ML Techniques",
+    "grandparent": "Data & AI",
+    "aliases": ["word embeddings", "text embeddings", "vector embeddings", "embedding models"],
+    "implies": ["Machine Learning"],
+    "implies_at_proficiency": {}
+  },
+  "Similarity Search": {
+    "canonical": "Similarity Search",
+    "parent": "ML Techniques",
+    "grandparent": "Data & AI",
+    "aliases": ["nearest neighbor search", "knn search", "approximate nearest neighbor"],
+    "implies": ["Embeddings"],
+    "implies_at_proficiency": {}
+  },
+  "Numerical Computing": {
+    "canonical": "Numerical Computing",
+    "parent": "Mathematical Foundations",
+    "grandparent": "Data & AI",
+    "aliases": ["numerical methods", "numerical analysis"],
+    "implies": ["Linear Algebra"],
+    "implies_at_proficiency": {}
+  },
+  "Scientific Computing": {
+    "canonical": "Scientific Computing",
+    "parent": "Mathematical Foundations",
+    "grandparent": "Data & AI",
+    "aliases": ["computational science", "scientific programming"],
+    "implies": ["Numerical Computing"],
+    "implies_at_proficiency": {}
+  },
+  "Signal Processing": {
+    "canonical": "Signal Processing",
+    "parent": "Engineering Domains",
+    "grandparent": "Domain Knowledge",
+    "aliases": ["digital signal processing", "dsp"],
+    "implies": ["MATLAB"],
+    "implies_at_proficiency": {}
+  },
+  "Statistical Modeling": {
+    "canonical": "Statistical Modeling",
+    "parent": "Data Science Practices",
+    "grandparent": "Data & AI",
+    "aliases": ["statistical modelling", "predictive modeling", "regression analysis"],
+    "implies": ["Statistics", "Machine Learning"],
+    "implies_at_proficiency": {}
+  },
+
+  "Linux": {
+    "canonical": "Linux",
+    "parent": "Operating Systems",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["linux os", "unix", "ubuntu", "centos", "debian", "rhel", "linux administration"],
+    "implies": ["Shell/Bash"],
+    "implies_at_proficiency": {
+      "Advanced": ["System Administration"],
+      "Expert": ["Kernel Internals"]
+    }
+  },
+  "Containerization": {
+    "canonical": "Containerization",
+    "parent": "Infrastructure Concepts",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["container technology", "containers"],
+    "implies": ["Linux"],
+    "implies_at_proficiency": {}
+  },
+  "Configuration Management": {
+    "canonical": "Configuration Management",
+    "parent": "Infrastructure Concepts",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["config management", "cm"],
+    "implies": ["Linux"],
+    "implies_at_proficiency": {}
+  },
+  "Monitoring": {
+    "canonical": "Monitoring",
+    "parent": "Observability",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["infrastructure monitoring", "application monitoring", "system monitoring"],
+    "implies": [],
+    "implies_at_proficiency": {}
+  },
+  "Metrics": {
+    "canonical": "Metrics",
+    "parent": "Observability",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["performance metrics", "system metrics", "application metrics"],
+    "implies": ["Monitoring"],
+    "implies_at_proficiency": {}
+  },
+  "Log Management": {
+    "canonical": "Log Management",
+    "parent": "Observability",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["logging", "log aggregation", "centralized logging"],
+    "implies": ["Monitoring"],
+    "implies_at_proficiency": {}
+  },
+  "Cloud Computing": {
+    "canonical": "Cloud Computing",
+    "parent": "Cloud Concepts",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["cloud services", "cloud platforms", "cloud infrastructure"],
+    "implies": [],
+    "implies_at_proficiency": {}
+  },
+  "Distributed Systems": {
+    "canonical": "Distributed Systems",
+    "parent": "Architecture",
+    "grandparent": "Technical Skills",
+    "aliases": ["distributed computing", "distributed architecture"],
+    "implies": ["System Design"],
+    "implies_at_proficiency": {
+      "Advanced": ["Consensus Algorithms", "CAP Theorem"],
+      "Expert": ["Distributed Systems Design"]
+    }
+  },
+  "Networking": {
+    "canonical": "Networking",
+    "parent": "Infrastructure Concepts",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["computer networking", "network engineering", "tcp/ip", "dns", "load balancing"],
+    "implies": [],
+    "implies_at_proficiency": {
+      "Advanced": ["VPN", "Firewall Configuration"],
+      "Expert": ["Network Architecture"]
+    }
+  },
+  "GitOps": {
+    "canonical": "GitOps",
+    "parent": "Development Practices",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["gitops methodology", "git ops"],
+    "implies": ["Git", "Kubernetes", "CI/CD"],
+    "implies_at_proficiency": {}
+  },
+  "System Administration": {
+    "canonical": "System Administration",
+    "parent": "Infrastructure Concepts",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["sys admin", "sysadmin", "server administration"],
+    "implies": ["Linux", "Networking"],
+    "implies_at_proficiency": {}
+  },
+  "Web Server Administration": {
+    "canonical": "Web Server Administration",
+    "parent": "Infrastructure Concepts",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["web server management", "server config"],
+    "implies": ["Linux", "Networking"],
+    "implies_at_proficiency": {}
+  },
+  "Windows Administration": {
+    "canonical": "Windows Administration",
+    "parent": "Operating Systems",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["windows server", "windows sys admin", "active directory"],
+    "implies": ["PowerShell"],
+    "implies_at_proficiency": {}
+  },
+
+  ".NET": {
+    "canonical": ".NET",
+    "parent": "Runtime Platforms",
+    "grandparent": "Technical Skills",
+    "aliases": ["dotnet", ".net framework", ".net core", "dot net"],
+    "implies": ["C#"],
+    "implies_at_proficiency": {}
+  },
+  "JVM Internals": {
+    "canonical": "JVM Internals",
+    "parent": "Runtime Platforms",
+    "grandparent": "Technical Skills",
+    "aliases": ["java virtual machine", "jvm", "jvm tuning"],
+    "implies": ["Java"],
+    "implies_at_proficiency": {}
+  },
+  "Language Internals": {
+    "canonical": "Language Internals",
+    "parent": "Programming Concepts",
+    "grandparent": "Technical Skills",
+    "aliases": ["language runtime", "interpreter design"],
+    "implies": [],
+    "implies_at_proficiency": {}
+  },
+  "Computer Architecture": {
+    "canonical": "Computer Architecture",
+    "parent": "Hardware Concepts",
+    "grandparent": "Technical Skills",
+    "aliases": ["cpu architecture", "processor architecture", "hardware architecture"],
+    "implies": [],
+    "implies_at_proficiency": {}
+  },
+  "Embedded Programming": {
+    "canonical": "Embedded Programming",
+    "parent": "Hardware Concepts",
+    "grandparent": "Technical Skills",
+    "aliases": ["embedded systems", "embedded development", "firmware development"],
+    "implies": ["C++", "Systems Programming"],
+    "implies_at_proficiency": {}
+  },
+
+  "Version Control": {
+    "canonical": "Version Control",
+    "parent": "Development Practices",
+    "grandparent": "Technical Skills",
+    "aliases": ["vcs", "source control", "revision control"],
+    "implies": [],
+    "implies_at_proficiency": {}
+  },
+  "API Design": {
+    "canonical": "API Design",
+    "parent": "API Technologies",
+    "grandparent": "Technical Skills",
+    "aliases": ["api architecture", "api patterns"],
+    "implies": [],
+    "implies_at_proficiency": {}
+  },
+  "API Documentation": {
+    "canonical": "API Documentation",
+    "parent": "API Technologies",
+    "grandparent": "Technical Skills",
+    "aliases": ["api docs", "api reference"],
+    "implies": ["Technical Writing"],
+    "implies_at_proficiency": {}
+  },
+  "API Testing": {
+    "canonical": "API Testing",
+    "parent": "Testing",
+    "grandparent": "Technical Skills",
+    "aliases": ["api test", "endpoint testing"],
+    "implies": ["Testing", "REST API consumption"],
+    "implies_at_proficiency": {}
+  },
+  "Testing": {
+    "canonical": "Testing",
+    "parent": "Quality Assurance",
+    "grandparent": "Technical Skills",
+    "aliases": ["software testing", "qa", "quality assurance"],
+    "implies": [],
+    "implies_at_proficiency": {}
+  },
+  "Backend Development": {
+    "canonical": "Backend Development",
+    "parent": "Engineering Practices",
+    "grandparent": "Technical Skills",
+    "aliases": ["backend dev", "server-side development", "backend engineering"],
+    "implies": ["REST API design"],
+    "implies_at_proficiency": {}
+  },
+
+  "Authentication": {
+    "canonical": "Authentication",
+    "parent": "Security Concepts",
+    "grandparent": "Technical Skills",
+    "aliases": ["auth", "user authentication", "identity verification"],
+    "implies": [],
+    "implies_at_proficiency": {}
+  },
+  "Authorization": {
+    "canonical": "Authorization",
+    "parent": "Security Concepts",
+    "grandparent": "Technical Skills",
+    "aliases": ["access control", "permissions"],
+    "implies": ["Authentication"],
+    "implies_at_proficiency": {}
+  },
+  "Security": {
+    "canonical": "Security",
+    "parent": "Security Concepts",
+    "grandparent": "Technical Skills",
+    "aliases": ["information security", "infosec", "cybersecurity"],
+    "implies": [],
+    "implies_at_proficiency": {}
+  },
+  "Web Security": {
+    "canonical": "Web Security",
+    "parent": "Security Practices",
+    "grandparent": "Technical Skills",
+    "aliases": ["web application security", "webapp security"],
+    "implies": ["OWASP", "Security"],
+    "implies_at_proficiency": {}
+  },
+
+  "Firebase": {
+    "canonical": "Firebase",
+    "parent": "Cloud Platforms",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["google firebase", "firebase platform"],
+    "implies": ["GCP"],
+    "implies_at_proficiency": {}
+  },
+  "Xcode": {
+    "canonical": "Xcode",
+    "parent": "Development Tools",
+    "grandparent": "Technical Skills",
+    "aliases": ["xcode ide", "apple xcode"],
+    "implies": ["iOS Development"],
+    "implies_at_proficiency": {}
+  },
+  "Android Studio": {
+    "canonical": "Android Studio",
+    "parent": "Development Tools",
+    "grandparent": "Technical Skills",
+    "aliases": ["android studio ide"],
+    "implies": ["Android Development"],
+    "implies_at_proficiency": {}
+  },
+  "Pydantic": {
+    "canonical": "Pydantic",
+    "parent": "Python Libraries",
+    "grandparent": "Technical Skills",
+    "aliases": ["pydantic library", "pydantic v2"],
+    "implies": ["Python"],
+    "implies_at_proficiency": {}
+  },
+  "Text Processing": {
+    "canonical": "Text Processing",
+    "parent": "Programming Concepts",
+    "grandparent": "Technical Skills",
+    "aliases": ["string manipulation", "text parsing", "regex"],
+    "implies": [],
+    "implies_at_proficiency": {}
+  },
+  "Regular Expressions": {
+    "canonical": "Regular Expressions",
+    "parent": "Programming Concepts",
+    "grandparent": "Technical Skills",
+    "aliases": ["regex", "regexp", "regular expression"],
+    "implies": ["Text Processing"],
+    "implies_at_proficiency": {}
+  },
+  "Cypher Query Language": {
+    "canonical": "Cypher Query Language",
+    "parent": "Database Languages",
+    "grandparent": "Technical Skills",
+    "aliases": ["cypher", "neo4j cypher"],
+    "implies": ["Neo4j"],
+    "implies_at_proficiency": {}
+  },
+  "Graph Databases": {
+    "canonical": "Graph Databases",
+    "parent": "Database Concepts",
+    "grandparent": "Technical Skills",
+    "aliases": ["graph db", "graph database technology"],
+    "implies": ["NoSQL"],
+    "implies_at_proficiency": {}
+  },
+  "OLAP": {
+    "canonical": "OLAP",
+    "parent": "Database Concepts",
+    "grandparent": "Technical Skills",
+    "aliases": ["online analytical processing", "olap cube"],
+    "implies": ["Data Warehousing"],
+    "implies_at_proficiency": {}
+  },
+  "Key-Value Stores": {
+    "canonical": "Key-Value Stores",
+    "parent": "Database Concepts",
+    "grandparent": "Technical Skills",
+    "aliases": ["key value database", "kv store"],
+    "implies": ["NoSQL"],
+    "implies_at_proficiency": {}
+  },
+
+  "Design Thinking": {
+    "canonical": "Design Thinking",
+    "parent": "Design Disciplines",
+    "grandparent": "Design",
+    "aliases": ["design thinking methodology", "human-centered design"],
+    "implies": ["UX Design"],
+    "implies_at_proficiency": {}
+  },
+  "Typography": {
+    "canonical": "Typography",
+    "parent": "Visual Design",
+    "grandparent": "Design",
+    "aliases": ["typographic design", "font design", "type design"],
+    "implies": [],
+    "implies_at_proficiency": {}
+  },
+
+  "Goal Setting": {
+    "canonical": "Goal Setting",
+    "parent": "Management Practices",
+    "grandparent": "Management",
+    "aliases": ["objective setting", "target setting"],
+    "implies": [],
+    "implies_at_proficiency": {}
+  },
+  "People Management": {
+    "canonical": "People Management",
+    "parent": "Management Practices",
+    "grandparent": "Management",
+    "aliases": ["team management", "personnel management", "engineering management"],
+    "implies": ["Leadership", "Communication"],
+    "implies_at_proficiency": {}
+  },
+  "Risk Management": {
+    "canonical": "Risk Management",
+    "parent": "Management Practices",
+    "grandparent": "Management",
+    "aliases": ["risk assessment", "risk mitigation"],
+    "implies": ["Project Management"],
+    "implies_at_proficiency": {}
+  },
+  "Resource Allocation": {
+    "canonical": "Resource Allocation",
+    "parent": "Management Practices",
+    "grandparent": "Management",
+    "aliases": ["resource planning", "capacity planning"],
+    "implies": ["Project Management"],
+    "implies_at_proficiency": {}
+  },
+
+  "High-Performance Computing": {
+    "canonical": "High-Performance Computing",
+    "parent": "Computing Disciplines",
+    "grandparent": "Domain Knowledge",
+    "aliases": ["hpc", "supercomputing", "parallel computing"],
+    "implies": ["Linux", "Systems Programming"],
+    "implies_at_proficiency": {}
+  },
+  "Compiler Design": {
+    "canonical": "Compiler Design",
+    "parent": "Computing Disciplines",
+    "grandparent": "Domain Knowledge",
+    "aliases": ["compiler construction", "compiler engineering"],
+    "implies": ["Systems Programming"],
+    "implies_at_proficiency": {}
+  },
+  "Reverse Engineering": {
+    "canonical": "Reverse Engineering",
+    "parent": "Security Disciplines",
+    "grandparent": "Domain Knowledge",
+    "aliases": ["reverse eng", "binary analysis", "disassembly"],
+    "implies": ["Assembly", "Systems Programming"],
+    "implies_at_proficiency": {}
+  },
+
+  "Blockchain": {
+    "canonical": "Blockchain",
+    "parent": "Distributed Technologies",
+    "grandparent": "Domain Knowledge",
+    "aliases": ["blockchain technology", "distributed ledger", "dlt"],
+    "implies": ["Distributed Systems", "Encryption"],
+    "implies_at_proficiency": {
+      "Advanced": ["Smart Contracts"],
+      "Expert": ["Consensus Mechanisms"]
+    }
+  },
+  "Smart Contracts": {
+    "canonical": "Smart Contracts",
+    "parent": "Distributed Technologies",
+    "grandparent": "Domain Knowledge",
+    "aliases": ["smart contract development", "solidity contracts"],
+    "implies": ["Blockchain"],
+    "implies_at_proficiency": {
+      "Advanced": ["Solidity"],
+      "Expert": ["Formal Verification"]
+    }
+  },
+  "Solidity": {
+    "canonical": "Solidity",
+    "parent": "Programming Languages",
+    "grandparent": "Technical Skills",
+    "aliases": ["solidity programming", "ethereum solidity"],
+    "implies": ["Smart Contracts", "Blockchain"],
+    "implies_at_proficiency": {}
+  },
+  "Web3": {
+    "canonical": "Web3",
+    "parent": "Distributed Technologies",
+    "grandparent": "Domain Knowledge",
+    "aliases": ["web3 development", "web 3.0", "dapp development"],
+    "implies": ["Blockchain", "JavaScript"],
+    "implies_at_proficiency": {}
+  },
+
+  "Game Development": {
+    "canonical": "Game Development",
+    "parent": "Engineering Practices",
+    "grandparent": "Domain Knowledge",
+    "aliases": ["game dev", "game programming", "video game development"],
+    "implies": ["C++", "3D Graphics"],
+    "implies_at_proficiency": {
+      "Advanced": ["Game Engine Architecture"],
+      "Expert": ["Custom Engine Development"]
+    }
+  },
+  "Unity": {
+    "canonical": "Unity",
+    "parent": "Game Engines",
+    "grandparent": "Domain Knowledge",
+    "aliases": ["unity3d", "unity engine", "unity game engine"],
+    "implies": ["C#", "Game Development", "3D Graphics"],
+    "implies_at_proficiency": {
+      "Advanced": ["Shader Programming"],
+      "Expert": ["Custom Rendering Pipelines"]
+    }
+  },
+  "Unreal Engine": {
+    "canonical": "Unreal Engine",
+    "parent": "Game Engines",
+    "grandparent": "Domain Knowledge",
+    "aliases": ["ue5", "unreal engine 5", "ue4", "unreal"],
+    "implies": ["C++", "Game Development", "3D Graphics"],
+    "implies_at_proficiency": {
+      "Advanced": ["Blueprint Visual Scripting"],
+      "Expert": ["Engine Source Modification"]
+    }
+  },
+
+  "CNN": {
+    "canonical": "CNN",
+    "parent": "Neural Network Architectures",
+    "grandparent": "Data & AI",
+    "aliases": ["convolutional neural network", "convolutional neural networks", "convnet"],
+    "implies": ["Deep Learning"],
+    "implies_at_proficiency": {}
+  },
+  "RNN": {
+    "canonical": "RNN",
+    "parent": "Neural Network Architectures",
+    "grandparent": "Data & AI",
+    "aliases": ["recurrent neural network", "recurrent neural networks", "lstm", "gru"],
+    "implies": ["Deep Learning"],
+    "implies_at_proficiency": {}
+  },
+  "Attention Mechanisms": {
+    "canonical": "Attention Mechanisms",
+    "parent": "Neural Network Architectures",
+    "grandparent": "Data & AI",
+    "aliases": ["attention", "self-attention", "multi-head attention", "transformer attention"],
+    "implies": ["Deep Learning"],
+    "implies_at_proficiency": {}
+  },
+  "Neural Networks": {
+    "canonical": "Neural Networks",
+    "parent": "Machine Learning Disciplines",
+    "grandparent": "Data & AI",
+    "aliases": ["neural net", "artificial neural networks", "ann"],
+    "implies": ["Machine Learning"],
+    "implies_at_proficiency": {}
+  },
+  "Object Detection": {
+    "canonical": "Object Detection",
+    "parent": "Computer Vision Tasks",
+    "grandparent": "Data & AI",
+    "aliases": ["object recognition", "yolo", "faster rcnn"],
+    "implies": ["Computer Vision", "Deep Learning"],
+    "implies_at_proficiency": {}
+  },
+  "Image Segmentation": {
+    "canonical": "Image Segmentation",
+    "parent": "Computer Vision Tasks",
+    "grandparent": "Data & AI",
+    "aliases": ["semantic segmentation", "instance segmentation"],
+    "implies": ["Computer Vision", "Deep Learning"],
+    "implies_at_proficiency": {}
+  },
+  "Named Entity Recognition": {
+    "canonical": "Named Entity Recognition",
+    "parent": "NLP Tasks",
+    "grandparent": "Data & AI",
+    "aliases": ["ner", "entity extraction", "entity recognition"],
+    "implies": ["NLP"],
+    "implies_at_proficiency": {}
+  },
+  "Sentiment Analysis": {
+    "canonical": "Sentiment Analysis",
+    "parent": "NLP Tasks",
+    "grandparent": "Data & AI",
+    "aliases": ["opinion mining", "sentiment classification"],
+    "implies": ["NLP"],
+    "implies_at_proficiency": {}
+  },
+  "Bayesian Statistics": {
+    "canonical": "Bayesian Statistics",
+    "parent": "Mathematical Foundations",
+    "grandparent": "Data & AI",
+    "aliases": ["bayesian inference", "bayesian methods", "bayes"],
+    "implies": ["Statistics"],
+    "implies_at_proficiency": {}
+  },
+  "Hypothesis Testing": {
+    "canonical": "Hypothesis Testing",
+    "parent": "Mathematical Foundations",
+    "grandparent": "Data & AI",
+    "aliases": ["statistical testing", "significance testing", "a/b test statistics"],
+    "implies": ["Statistics"],
+    "implies_at_proficiency": {}
+  },
+
+  "CSS Grid": {
+    "canonical": "CSS Grid",
+    "parent": "CSS Layout",
+    "grandparent": "Technical Skills",
+    "aliases": ["css grid layout", "grid layout"],
+    "implies": ["CSS"],
+    "implies_at_proficiency": {}
+  },
+  "CSS Animations": {
+    "canonical": "CSS Animations",
+    "parent": "CSS Techniques",
+    "grandparent": "Technical Skills",
+    "aliases": ["css transitions", "css keyframes", "web animations"],
+    "implies": ["CSS"],
+    "implies_at_proficiency": {}
+  },
+  "CSS Architecture": {
+    "canonical": "CSS Architecture",
+    "parent": "CSS Techniques",
+    "grandparent": "Technical Skills",
+    "aliases": ["css methodology", "bem", "css modules", "css-in-js"],
+    "implies": ["CSS"],
+    "implies_at_proficiency": {}
+  },
+  "Server-Side Rendering": {
+    "canonical": "Server-Side Rendering",
+    "parent": "Web Architecture",
+    "grandparent": "Technical Skills",
+    "aliases": ["ssr", "server rendering", "isomorphic rendering"],
+    "implies": ["JavaScript", "Node.js"],
+    "implies_at_proficiency": {}
+  },
+  "Static Site Generation": {
+    "canonical": "Static Site Generation",
+    "parent": "Web Architecture",
+    "grandparent": "Technical Skills",
+    "aliases": ["ssg", "static generation", "jamstack"],
+    "implies": ["JavaScript"],
+    "implies_at_proficiency": {}
+  },
+
+  "Dependency Injection": {
+    "canonical": "Dependency Injection",
+    "parent": "Software Engineering Principles",
+    "grandparent": "Technical Skills",
+    "aliases": ["di", "ioc", "inversion of control"],
+    "implies": ["Design Patterns"],
+    "implies_at_proficiency": {}
+  },
+  "Middleware": {
+    "canonical": "Middleware",
+    "parent": "Software Engineering Principles",
+    "grandparent": "Technical Skills",
+    "aliases": ["middleware pattern", "middleware architecture"],
+    "implies": ["Backend Development"],
+    "implies_at_proficiency": {}
+  },
+
+  "Scalability": {
+    "canonical": "Scalability",
+    "parent": "Architecture",
+    "grandparent": "Technical Skills",
+    "aliases": ["horizontal scaling", "vertical scaling", "scaling"],
+    "implies": ["System Design"],
+    "implies_at_proficiency": {}
+  },
+  "Load Balancing": {
+    "canonical": "Load Balancing",
+    "parent": "Networking",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["load balancer", "lb", "traffic distribution"],
+    "implies": ["Networking"],
+    "implies_at_proficiency": {}
+  },
+  "API Gateway": {
+    "canonical": "API Gateway",
+    "parent": "API Technologies",
+    "grandparent": "Technical Skills",
+    "aliases": ["api gateway design", "api gw", "kong", "api management"],
+    "implies": ["Microservices", "REST API design"],
+    "implies_at_proficiency": {}
+  },
+  "Service Discovery": {
+    "canonical": "Service Discovery",
+    "parent": "Microservices Patterns",
+    "grandparent": "Technical Skills",
+    "aliases": ["service registration", "consul", "eureka"],
+    "implies": ["Microservices"],
+    "implies_at_proficiency": {}
+  },
+  "Distributed Tracing": {
+    "canonical": "Distributed Tracing",
+    "parent": "Observability",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["tracing", "jaeger", "zipkin", "opentelemetry"],
+    "implies": ["Microservices", "Monitoring"],
+    "implies_at_proficiency": {}
+  },
+
+  "Multi-Stage Builds": {
+    "canonical": "Multi-Stage Builds",
+    "parent": "Containerization",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["docker multi-stage", "multi stage docker builds"],
+    "implies": ["Docker"],
+    "implies_at_proficiency": {}
+  },
+  "Docker Networking": {
+    "canonical": "Docker Networking",
+    "parent": "Containerization",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["container networking", "docker network"],
+    "implies": ["Docker", "Networking"],
+    "implies_at_proficiency": {}
+  },
+
+  "CQRS": {
+    "canonical": "CQRS",
+    "parent": "Architecture Patterns",
+    "grandparent": "Technical Skills",
+    "aliases": ["command query responsibility segregation", "cqrs pattern"],
+    "implies": ["Event-Driven Architecture", "System Design"],
+    "implies_at_proficiency": {}
+  },
+  "Event Sourcing": {
+    "canonical": "Event Sourcing",
+    "parent": "Architecture Patterns",
+    "grandparent": "Technical Skills",
+    "aliases": ["event sourcing pattern", "event store"],
+    "implies": ["Event-Driven Architecture"],
+    "implies_at_proficiency": {}
+  },
+  "Saga Pattern": {
+    "canonical": "Saga Pattern",
+    "parent": "Architecture Patterns",
+    "grandparent": "Technical Skills",
+    "aliases": ["saga", "distributed transactions", "choreography saga", "orchestration saga"],
+    "implies": ["Microservices", "Distributed Systems"],
+    "implies_at_proficiency": {}
+  },
+
+  "Compliance Frameworks": {
+    "canonical": "Compliance Frameworks",
+    "parent": "Security & Compliance",
+    "grandparent": "Domain Knowledge",
+    "aliases": ["regulatory compliance", "soc2", "iso 27001", "hipaa", "gdpr"],
+    "implies": ["Security Auditing"],
+    "implies_at_proficiency": {}
+  },
+  "Threat Modeling": {
+    "canonical": "Threat Modeling",
+    "parent": "Security Practices",
+    "grandparent": "Technical Skills",
+    "aliases": ["threat analysis", "stride", "attack surface analysis"],
+    "implies": ["Security Auditing", "OWASP"],
+    "implies_at_proficiency": {}
+  },
+  "Rate Limiting": {
+    "canonical": "Rate Limiting",
+    "parent": "API Technologies",
+    "grandparent": "Technical Skills",
+    "aliases": ["throttling", "request limiting", "api rate limiting"],
+    "implies": ["API Security"],
+    "implies_at_proficiency": {}
+  },
+
+  "Agile Transformation": {
+    "canonical": "Agile Transformation",
+    "parent": "Management Practices",
+    "grandparent": "Management",
+    "aliases": ["agile adoption", "agile coaching", "organizational agility"],
+    "implies": ["Agile", "Leadership"],
+    "implies_at_proficiency": {}
+  },
+  "Sprint Planning": {
+    "canonical": "Sprint Planning",
+    "parent": "Development Methodologies",
+    "grandparent": "Management",
+    "aliases": ["sprint plan", "iteration planning"],
+    "implies": ["Scrum", "Agile"],
+    "implies_at_proficiency": {}
+  },
+  "Retrospectives": {
+    "canonical": "Retrospectives",
+    "parent": "Development Methodologies",
+    "grandparent": "Management",
+    "aliases": ["retro", "sprint retrospective", "team retrospective"],
+    "implies": ["Agile"],
+    "implies_at_proficiency": {}
+  },
+  "Change Management": {
+    "canonical": "Change Management",
+    "parent": "Management Practices",
+    "grandparent": "Management",
+    "aliases": ["organizational change", "change leadership"],
+    "implies": ["Leadership", "Communication"],
+    "implies_at_proficiency": {}
+  },
+  "Strategic Planning": {
+    "canonical": "Strategic Planning",
+    "parent": "Management Practices",
+    "grandparent": "Management",
+    "aliases": ["strategic thinking", "business strategy", "long-term planning"],
+    "implies": ["Leadership"],
+    "implies_at_proficiency": {}
+  },
+  "Conflict Resolution": {
+    "canonical": "Conflict Resolution",
+    "parent": "Interpersonal Skills",
+    "grandparent": "Soft Skills",
+    "aliases": ["dispute resolution", "conflict management", "mediation"],
+    "implies": ["Communication"],
+    "implies_at_proficiency": {}
+  },
+  "Emotional Intelligence": {
+    "canonical": "Emotional Intelligence",
+    "parent": "Interpersonal Skills",
+    "grandparent": "Soft Skills",
+    "aliases": ["eq", "emotionally intelligent", "empathy"],
+    "implies": ["Communication"],
+    "implies_at_proficiency": {}
+  },
+  "Negotiation": {
+    "canonical": "Negotiation",
+    "parent": "Interpersonal Skills",
+    "grandparent": "Soft Skills",
+    "aliases": ["negotiation skills", "deal negotiation"],
+    "implies": ["Communication"],
+    "implies_at_proficiency": {}
+  },
+  "Cross-Functional Collaboration": {
+    "canonical": "Cross-Functional Collaboration",
+    "parent": "Interpersonal Skills",
+    "grandparent": "Soft Skills",
+    "aliases": ["cross-team work", "interdepartmental collaboration"],
+    "implies": ["Team Collaboration", "Communication"],
+    "implies_at_proficiency": {}
+  },
+  "Remote Collaboration": {
+    "canonical": "Remote Collaboration",
+    "parent": "Personal Effectiveness",
+    "grandparent": "Soft Skills",
+    "aliases": ["remote work", "distributed team work", "async communication"],
+    "implies": ["Communication", "Time Management"],
+    "implies_at_proficiency": {}
+  },
+
+  "Information Architecture": {
+    "canonical": "Information Architecture",
+    "parent": "Design Disciplines",
+    "grandparent": "Design",
+    "aliases": ["ia", "content architecture", "site structure"],
+    "implies": ["UX Design"],
+    "implies_at_proficiency": {}
+  },
+  "Motion Design": {
+    "canonical": "Motion Design",
+    "parent": "Visual Design",
+    "grandparent": "Design",
+    "aliases": ["motion graphics", "animation design", "ui animation"],
+    "implies": ["UI Design"],
+    "implies_at_proficiency": {}
+  },
+  "Interaction Design": {
+    "canonical": "Interaction Design",
+    "parent": "Design Disciplines",
+    "grandparent": "Design",
+    "aliases": ["ixd", "interaction patterns"],
+    "implies": ["UX Design", "Prototyping"],
+    "implies_at_proficiency": {}
+  },
+
+  "Usability Testing": {
+    "canonical": "Usability Testing",
+    "parent": "Design Practices",
+    "grandparent": "Design",
+    "aliases": ["user testing", "ux testing", "usability study"],
+    "implies": ["User Research", "UX Design"],
+    "implies_at_proficiency": {}
+  },
+  "ARIA": {
+    "canonical": "ARIA",
+    "parent": "Accessibility",
+    "grandparent": "Design",
+    "aliases": ["wai-aria", "aria attributes", "accessible rich internet applications"],
+    "implies": ["Accessibility (a11y)", "HTML"],
+    "implies_at_proficiency": {}
+  },
+
+  "Funnel Analysis": {
+    "canonical": "Funnel Analysis",
+    "parent": "Data & Insights",
+    "grandparent": "Product",
+    "aliases": ["conversion funnel", "funnel optimization"],
+    "implies": ["Analytics"],
+    "implies_at_proficiency": {}
+  },
+  "Cohort Analysis": {
+    "canonical": "Cohort Analysis",
+    "parent": "Data & Insights",
+    "grandparent": "Product",
+    "aliases": ["cohort study", "user cohorts"],
+    "implies": ["Analytics", "SQL (for analytics)"],
+    "implies_at_proficiency": {}
+  },
+  "User Segmentation": {
+    "canonical": "User Segmentation",
+    "parent": "Data & Insights",
+    "grandparent": "Product",
+    "aliases": ["audience segmentation", "customer segmentation"],
+    "implies": ["Analytics"],
+    "implies_at_proficiency": {}
+  },
+  "Go-To-Market Strategy": {
+    "canonical": "Go-To-Market Strategy",
+    "parent": "Product Leadership",
+    "grandparent": "Product",
+    "aliases": ["gtm strategy", "gtm", "launch strategy"],
+    "implies": ["Product Management"],
+    "implies_at_proficiency": {}
+  },
+
+  "Fintech": {
+    "canonical": "Fintech",
+    "parent": "Industry Verticals",
+    "grandparent": "Domain Knowledge",
+    "aliases": ["financial technology", "fintech domain"],
+    "implies": [],
+    "implies_at_proficiency": {}
+  },
+  "Healthcare IT": {
+    "canonical": "Healthcare IT",
+    "parent": "Industry Verticals",
+    "grandparent": "Domain Knowledge",
+    "aliases": ["healthtech", "health informatics", "medical software", "hl7", "fhir"],
+    "implies": [],
+    "implies_at_proficiency": {}
+  },
+  "E-commerce": {
+    "canonical": "E-commerce",
+    "parent": "Industry Verticals",
+    "grandparent": "Domain Knowledge",
+    "aliases": ["ecommerce", "online retail", "digital commerce"],
+    "implies": [],
+    "implies_at_proficiency": {}
+  },
+  "EdTech": {
+    "canonical": "EdTech",
+    "parent": "Industry Verticals",
+    "grandparent": "Domain Knowledge",
+    "aliases": ["education technology", "edtech domain", "learning technology"],
+    "implies": [],
+    "implies_at_proficiency": {}
+  },
+  "SaaS": {
+    "canonical": "SaaS",
+    "parent": "Business Models",
+    "grandparent": "Domain Knowledge",
+    "aliases": ["software as a service", "saas platform", "saas development"],
+    "implies": ["Cloud Computing"],
+    "implies_at_proficiency": {}
+  },
+
+  "Terraform Modules": {
+    "canonical": "Terraform Modules",
+    "parent": "Infrastructure as Code",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["tf modules", "terraform module development"],
+    "implies": ["Terraform"],
+    "implies_at_proficiency": {}
+  },
+  "Kafka Streams": {
+    "canonical": "Kafka Streams",
+    "parent": "Data Streaming",
+    "grandparent": "Data & AI",
+    "aliases": ["kafka streams api", "kstreams"],
+    "implies": ["Apache Kafka", "Stream Processing"],
+    "implies_at_proficiency": {}
+  },
+  "Delta Lake": {
+    "canonical": "Delta Lake",
+    "parent": "Data Platforms",
+    "grandparent": "Data & AI",
+    "aliases": ["delta lake storage", "databricks delta"],
+    "implies": ["Apache Spark", "Data Warehousing"],
+    "implies_at_proficiency": {}
+  },
+
+  "Observability": {
+    "canonical": "Observability",
+    "parent": "Engineering Practices",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["system observability", "o11y", "observability engineering"],
+    "implies": ["Monitoring", "Log Management", "Distributed Tracing"],
+    "implies_at_proficiency": {}
+  },
+  "Platform Engineering": {
+    "canonical": "Platform Engineering",
+    "parent": "Engineering Practices",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["platform eng", "internal developer platform", "developer platform"],
+    "implies": ["DevOps", "Kubernetes", "CI/CD"],
+    "implies_at_proficiency": {}
+  },
+  "Site Reliability Engineering": {
+    "canonical": "Site Reliability Engineering",
+    "parent": "Engineering Practices",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["sre", "site reliability", "reliability engineering"],
+    "implies": ["DevOps", "Monitoring", "Linux"],
+    "implies_at_proficiency": {
+      "Advanced": ["SLOs", "Error Budgets"],
+      "Expert": ["Reliability Architecture"]
+    }
+  },
+
+  "WebAssembly": {
+    "canonical": "WebAssembly",
+    "parent": "Web Fundamentals",
+    "grandparent": "Technical Skills",
+    "aliases": ["wasm", "web assembly"],
+    "implies": ["JavaScript", "Systems Programming"],
+    "implies_at_proficiency": {}
+  },
+  "Progressive Web Apps": {
+    "canonical": "Progressive Web Apps",
+    "parent": "Web Architecture",
+    "grandparent": "Technical Skills",
+    "aliases": ["pwa", "progressive web app"],
+    "implies": ["JavaScript", "HTML", "CSS"],
+    "implies_at_proficiency": {}
+  },
+  "Storybook": {
+    "canonical": "Storybook",
+    "parent": "Development Tools",
+    "grandparent": "Technical Skills",
+    "aliases": ["storybook js", "component explorer"],
+    "implies": ["React", "Design Systems"],
+    "implies_at_proficiency": {}
+  },
+  "Webpack": {
+    "canonical": "Webpack",
+    "parent": "Build Tools",
+    "grandparent": "Technical Skills",
+    "aliases": ["webpack bundler", "webpack config"],
+    "implies": ["JavaScript", "Node.js"],
+    "implies_at_proficiency": {}
+  },
+  "Vite": {
+    "canonical": "Vite",
+    "parent": "Build Tools",
+    "grandparent": "Technical Skills",
+    "aliases": ["vite bundler", "vite build tool", "vitejs"],
+    "implies": ["JavaScript", "Node.js"],
+    "implies_at_proficiency": {}
+  },
+  "npm": {
+    "canonical": "npm",
+    "parent": "Package Managers",
+    "grandparent": "Technical Skills",
+    "aliases": ["node package manager", "npm registry"],
+    "implies": ["Node.js"],
+    "implies_at_proficiency": {}
+  },
+  "Yarn": {
+    "canonical": "Yarn",
+    "parent": "Package Managers",
+    "grandparent": "Technical Skills",
+    "aliases": ["yarn package manager", "yarn berry"],
+    "implies": ["Node.js"],
+    "implies_at_proficiency": {}
+  },
+  "pip": {
+    "canonical": "pip",
+    "parent": "Package Managers",
+    "grandparent": "Technical Skills",
+    "aliases": ["pip package manager", "python pip", "pypi"],
+    "implies": ["Python"],
+    "implies_at_proficiency": {}
+  },
+
+  "OpenTelemetry": {
+    "canonical": "OpenTelemetry",
+    "parent": "Observability",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["otel", "open telemetry", "opentelemetry sdk"],
+    "implies": ["Distributed Tracing", "Monitoring"],
+    "implies_at_proficiency": {}
+  },
+  "Datadog": {
+    "canonical": "Datadog",
+    "parent": "Monitoring & Observability",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["datadog monitoring", "dd"],
+    "implies": ["Monitoring", "Observability"],
+    "implies_at_proficiency": {}
+  },
+  "New Relic": {
+    "canonical": "New Relic",
+    "parent": "Monitoring & Observability",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["newrelic", "new relic monitoring"],
+    "implies": ["Monitoring", "Observability"],
+    "implies_at_proficiency": {}
+  },
+
+  "AWS CloudFormation": {
+    "canonical": "AWS CloudFormation",
+    "parent": "Infrastructure as Code",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["cloudformation", "cfn", "aws cfn"],
+    "implies": ["AWS", "Infrastructure as Code"],
+    "implies_at_proficiency": {}
+  },
+  "AWS SNS": {
+    "canonical": "AWS SNS",
+    "parent": "Messaging Services",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["sns", "simple notification service", "aws sns service"],
+    "implies": ["AWS"],
+    "implies_at_proficiency": {}
+  },
+  "AWS SQS": {
+    "canonical": "AWS SQS",
+    "parent": "Messaging Services",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["sqs", "simple queue service", "aws sqs queue"],
+    "implies": ["AWS"],
+    "implies_at_proficiency": {}
+  },
+  "AWS IAM": {
+    "canonical": "AWS IAM",
+    "parent": "Security Services",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["iam", "identity and access management", "aws iam policies"],
+    "implies": ["AWS", "Authentication", "Authorization"],
+    "implies_at_proficiency": {}
+  },
+  "Azure Functions": {
+    "canonical": "Azure Functions",
+    "parent": "Serverless Computing",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["azure function", "azure serverless"],
+    "implies": ["Azure", "Serverless"],
+    "implies_at_proficiency": {}
+  },
+  "Google Cloud Functions": {
+    "canonical": "Google Cloud Functions",
+    "parent": "Serverless Computing",
+    "grandparent": "DevOps & Infrastructure",
+    "aliases": ["cloud functions", "gcp functions", "gcf"],
+    "implies": ["GCP", "Serverless"],
+    "implies_at_proficiency": {}
+  }
+}
