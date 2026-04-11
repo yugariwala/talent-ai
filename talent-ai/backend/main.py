@@ -10,6 +10,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
 from database import Base, engine
+from routers import jobs as jobs_router
 
 
 @asynccontextmanager
@@ -17,7 +18,7 @@ async def lifespan(app: FastAPI):
     # Startup: create all tables
     async with engine.begin() as conn:
         await conn.run_sync(Base.metadata.create_all)
-    print("Server started")
+    print("Server started — tables ready")
     yield
 
 
@@ -37,14 +38,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# --- Router registrations (uncomment as agents are built) ---
-# from routers import jobs, candidates, parsing, matching, taxonomy, traces
-# app.include_router(jobs.router)
-# app.include_router(candidates.router)
-# app.include_router(parsing.router)
-# app.include_router(matching.router)
-# app.include_router(taxonomy.router)
-# app.include_router(traces.router)
+# Register routers
+app.include_router(jobs_router.router)
 
 # Mount uploads directory for static file serving
 uploads_dir = os.path.join(os.path.dirname(__file__), "..", "uploads")
@@ -55,3 +50,4 @@ app.mount("/uploads", StaticFiles(directory=uploads_dir), name="uploads")
 @app.get("/health")
 async def health_check():
     return {"status": "ok", "version": "2.0"}
+
