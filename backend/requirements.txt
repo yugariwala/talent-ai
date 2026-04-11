@@ -2,8 +2,12 @@ fastapi==0.115.0
 uvicorn[standard]==0.30.0
 sqlalchemy[asyncio]==2.0.36
 aiosqlite==0.20.0
+<<<<<<< HEAD
 anthropic==0.40.0
 groq==0.11.0
+=======
+groq>=1.0.0
+>>>>>>> 6f21b3786fe5b50300171476c4a75a6e6958ba71
 instructor==1.7.0
 pydantic==2.9.0
 pdfplumber==0.11.4

@@ -10,7 +10,7 @@ services:
       - ./uploads:/app/uploads
       - ./demo_data:/app/demo_data
     environment:
-      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - GROQ_API_KEY=${GROQ_API_KEY}
     command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 
   frontend:
